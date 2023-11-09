@@ -3,7 +3,7 @@ This was the semester project for the first semester of Frontend Development, at
 
 ## Table of contents:
 - [About](#about)
-- [Requirements](#requirements)
+  - [Requirements](#requirements)
 - [Features](#features)
 - [Technical Specification](#technical-specification)
 - [Process:](#process)
