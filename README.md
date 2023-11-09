@@ -4,13 +4,16 @@ This was the semester project for the first semester of Frontend Development, at
 ## Table of contents:
 - [About](#about)
 - [Features](#features)
-- [Requirements:](#requirements)
+- [Technical Specification](#technical-specification)
+- [Requirements](#requirements)
 - [Process:](#process)
-  - [Design Process:](#design-process)
-  - [Production Process:](#production-process)
+  - [Design Process](#design-process)
+  - [Production Process](#production-process)
 - [Reflection](#reflection)  
 
 ## About
+
+## Technical Specification
 
 ## Features
 
