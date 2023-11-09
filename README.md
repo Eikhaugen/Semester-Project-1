@@ -13,7 +13,7 @@ This was the semester project for the first semester of Frontend Development, at
 
 ## About
 
-## Requirements
+### Requirements
 
 ## Technical Specification
 
