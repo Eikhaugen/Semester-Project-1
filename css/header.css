@@ -6,9 +6,15 @@
     padding: 0;
 }
 
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
 header {
     width: 100%;
-    background-image: url("../assets/images/mobile/banner.png");
+    background-image: url("");
     background-size: 100%;
     background-position-y: 80%;
     height: 180px;
@@ -45,11 +51,23 @@ h1 {
     height: 180px;
 }
 
-.hamburger {
+#toggleBtn {
     height: 32px;
     width: 32px;
     border-radius: 6px;
-    margin: 16px;
+    right: 16px;
+    top: 8px;
+    position: absolute;
+    z-index: 20;
+}
+
+#menu{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 10;
 }
 
 .closeIcon {
