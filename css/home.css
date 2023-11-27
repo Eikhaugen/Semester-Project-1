@@ -1,0 +1,107 @@
+@import "constants.css";
+
+.links-section {
+    height: 72px;
+    width: 100%;
+    background-color: #2E5CFF;
+
+}
+
+.links-section {
+    padding: 8px 16px;
+}
+
+.links-section-content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.links-section-content a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.links-section-content a:hover, .links-section-content a:focus {
+    text-decoration: underline;
+}
+
+.links-section-content i {
+    padding-right: 4px;
+}
+
+.links-section-content-bottom{
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+/*styles for event and exhibition section*/
+h2 {
+    font-family: inter, serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: inter, serif;
+}
+
+.events-section, .exhibitions-section {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.events-section-headline, .exhibitions-section-headline {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    align-items: baseline;
+}
+
+.events-section-headline a, .exhibitions-section-headline a {
+    font-size: 1rem;
+    color: #494949;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.event-details, .exhibition-details {
+    padding: 0 0 4px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.event-details span, .exhibition-details span {
+    color: #494949;
+    font-family: inter, serif;
+}
+
+.events-section-headline a:hover, .events-section-headline a:focus,
+.exhibitions-section-headline a:hover, .exhibitions-section-headline a:focus
+{
+    text-decoration: underline;
+}
+
+.events-section-headline i, .exhibitions-section i {
+    padding-right: 4px;
+}
+
+.event-container, .exhibition-container {
+    width: 100%;
+    border: 1px solid #393939;
+    border-radius: 6px;
+}
+
+.event-image, .exhibition-image {
+    height: 225px;
+}
+
+

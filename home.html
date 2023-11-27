@@ -72,5 +72,78 @@
             });
         </script>
     </header>
+    <main>
+        <section class="links-section">
+            <div class="links-section-content links-section-content-top">
+                <a href=""><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>Visit Us</a>
+                <a href=""><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>What's Happening</a>
+            </div>
+            <div class="links-section-content links-section-content-bottom" tabindex="0">
+                <span>Opening Hours today:</span><span id="today"></span>
+                <script>
+                    let day = (new Date).getDay();
+                    let hours = ["10 - 16", "Closed", "10 - 16", "10 - 16", "10 - 20", "10 - 16", "10 - 16"];
+                    let todaysHours = hours[day];
+                    document.getElementById(id = "today").innerHTML = todaysHours;
+                </script>
+            </div>
+        </section>
+        <section class="events-section">
+            <div class="events-section-headline">
+            <h2>Upcoming Events</h2>
+                <a href="events.html"><i class="fa-solid fa-arrow-right" style="color: #393939;"></i>See more</a>
+            </div>
+            <div class="event-container event-1">
+                <div class="event-image"></div>
+                <div class="event-details">
+                    <span>January 6th / 18:00-22:00</span>
+                    <h3>Night at the museum</h3>
+                </div>
+            </div>
+            <div class="event-container event-2">
+                <div class="event-image"></div>
+                <div class="event-details">
+                    <span>date/date</span>
+                    <h3>Night at the museum</h3>
+                </div>
+            </div>
+            <div class="event-container event-3">
+                <div class="event-image"></div>
+                <div class="event-details">
+                    <span>date/date</span>
+                    <h3>Night at the museum</h3>
+                </div>
+            </div>
+        </section>
+        <section class="exhibitions-section">
+            <div class="exhibitions-section-headline">
+                <h2>Exhibitions</h2>
+                <a href="exhibitions.html"><i class="fa-solid fa-arrow-right" style="color: #393939;"></i>See more</a>
+            </div>
+            <div class="exhibition-container exhibition-1">
+                <div class="exhibition-image"></div>
+                <div class="exhibition-details">
+                    <span>date/date</span>
+                    <h3>Night at the museum</h3>
+                </div>
+            </div>
+            <div class="exhibition-container exhibition-2">
+                <div class="exhibition-image"></div>
+                <div class="exhibition-details">
+                    <span>date/date</span>
+                    <h3>Night at the museum</h3>
+                </div>
+            </div>
+            <div class="exhibition-container exhibition-3">
+                <div class="exhibition-image"></div>
+                <div class="exhibition-details">
+                    <span>date/date</span>
+                    <h3>Night at the museum</h3>
+                </div>
+            </div>
+        </section>
+        <section class="info-section">
+        </section>
+    </main>
 </body>
 </html>
