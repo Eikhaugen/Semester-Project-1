@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: roboto, serif;
 }
 
 body {
@@ -40,6 +41,10 @@ header {
     top: 8px;
     left: 8px;
     z-index: 30;
+}
+
+.desktop-nav {
+    display: none;
 }
 
 nav {
@@ -124,6 +129,44 @@ h1 {
     list-style-type: none;
 }
 
-.closeIcon {
-    display: none;
+@media screen and (min-width: 900px) {
+
+    header {
+        background-image: url("../assets/images/mobile/Banner.png");
+        background-size: 100%;
+        background-position-y: 80%;
+        height: 600px;
+    }
+
+    .header-content {
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 245px;
+        height: 104px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    #toggleBtn {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: block;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .desktop-nav ul {
+        display: flex;
+        gap: 32px;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 24px 0 0 340px;
+    }
+
 }
