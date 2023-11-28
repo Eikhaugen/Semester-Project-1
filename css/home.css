@@ -1,0 +1,194 @@
+@import "constants.css";
+
+body {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links-section {
+    height: 72px;
+    width: 100%;
+    background-color: var(--primary);
+
+}
+
+.links-section {
+    padding: 8px 16px;
+}
+
+.links-section-content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.links-section-content a {
+    color: var(--textWhite);
+    text-decoration: none;
+}
+
+.links-section-content a:hover, .links-section-content a:focus {
+    text-decoration: underline;
+}
+
+.links-section-content i {
+    padding-right: 4px;
+}
+
+.links-section-content-bottom {
+    color: var(--textWhite);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+.links-section-content-bottom span {
+    color: var(--textWhite);
+}
+
+/*styles for event and exhibition section*/
+h2 {
+    font-family: inter, serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: inter, serif;
+}
+
+.events-section, .exhibitions-section, .info-section {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.events-section-headline, .exhibitions-section-headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.events-section-headline a, .exhibitions-section-headline a {
+    font-size: 1rem;
+    color: var(--border);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.event-details, .exhibition-details {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.event-details span, .exhibition-details span {
+    color: var(--text);
+    font-family: inter, serif;
+}
+
+.events-section-headline a:hover, .events-section-headline a:focus,
+.exhibitions-section-headline a:hover, .exhibitions-section-headline a:focus {
+    text-decoration: underline;
+}
+
+.events-section-headline i, .exhibitions-section i {
+    padding-right: 4px;
+}
+
+.event-card, .exhibition-card, .ticket-info-card, .hours-info-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.event-card, .exhibition-card {
+    height: 250px;
+}
+
+.ticket-info-card, .hours-info-card {
+    height: fit-content;
+    padding: 8px;
+    gap: 1rem;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hours, .price {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+
+.event-image, .exhibition-image {
+    flex-grow: 1;
+    overflow: hidden;
+    max-height: 285px;
+}
+
+.event-image img, .exhibition-image img {
+    width: 100%
+}
+
+.events-container, .exhibitions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .event-card, .exhibition-card {
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+
+    }
+
+    .event-card, .exhibition-card {
+        height: 350px;
+    }
+
+    .events-container, .exhibitions-container {
+        flex-direction: row;
+    }
+
+    .info-section {
+        flex-direction: row;
+    }
+
+    .ticket-info-card {
+        height: inherit;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .links-section {
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+}
