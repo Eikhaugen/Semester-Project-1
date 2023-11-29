@@ -1,0 +1,88 @@
+@import "variables.css";
+
+footer {
+    background: linear-gradient(180deg, #2E5CFF 0%, #000 100%);
+    width: 100%;
+    height: 560px;
+    padding: 1rem;
+    display: grid;
+    justify-items: center;
+
+}
+
+.footer-newsletter-form {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer h2, footer span {
+    color: #ffffff;
+}
+
+.footer-newsletter-form span {
+    padding-top: 16px;
+}
+
+.footer-newsletter-form form {
+    padding-top: 1rem;
+}
+
+.footer-newsletter-form button {
+    background-color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer-newsletter-form button:hover, .footer-newsletter-form button:focus {
+    background-color: var(--primary);
+    color: #ffffff;
+    border: 1px solid white;
+}
+
+.footer-newsletter-form #email, .footer-newsletter-form form button {
+    padding: 4px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+
+.footer-social-media-logos {
+    padding-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.footer-social-media-logos i {
+    font-size: 32px;
+}
+
+.footer-copyright {
+    width: 90%;
+    align-self: end;
+    border-top: 1px solid white;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+
+    .footer-newsletter-form input {
+        width: 400px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    footer {
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+    }
+
+}
