@@ -1,4 +1,4 @@
-@import "constants.css";
+@import "variables.css";
 
 body {
     max-width: 1440px;
@@ -148,7 +148,6 @@ h3 {
     gap: 1rem;
 }
 
-
 @media screen and (min-width: 600px) {
 
     .event-card, .exhibition-card {
@@ -181,7 +180,6 @@ h3 {
     .ticket-info-card {
         height: inherit;
     }
-
 }
 
 @media screen and (min-width: 1440px) {
@@ -191,4 +189,8 @@ h3 {
         border-bottom-left-radius: 6px;
     }
 
+    footer {
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+    }
 }
