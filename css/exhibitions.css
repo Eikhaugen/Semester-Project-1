@@ -1,3 +1,24 @@
 @import "variables.css";
 @import "reset.css";
 
+main {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.exhibition-card {
+    border-radius: 6px;
+    border: 1px solid var(--border);
+}
+
+.exhibition-info {
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
