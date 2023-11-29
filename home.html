@@ -97,7 +97,7 @@
             <div class="events-container">
                 <div class="event-card event-1">
                     <div class="event-image event-image-1">
-                        <img src="assets/images/mobile/night-at-the-museum-400_x_285.png">
+                        <img src="assets/images/mobile/night-at-the-museum-400_x_285.png" alt="towering mammoth skeleton on floor, museum dimly lit in evening">
                     </div>
                     <div class="event-details">
                         <span>January 6th / 18:00-22:00</span>
@@ -175,14 +175,13 @@
         </section>
     </main>
     <footer>
-        <img src="assets/images/shared/logo.svg" alt="Science museum logo" class="footer-logo">
-        <div class="footer-newsletter-form">
+        <a href="#"><img src="assets/images/shared/logo.svg" alt="Science museum logo" class="footer-logo"></a>
+            <div class="footer-newsletter-form">
             <h2>Newsletter</h2>
             <span>Sign up for our newsletter to receive information about coming exhibitions and events.</span>
             <form>
-                <label for="email"></label>
-                <input id="email" name="email" type="email" placeholder="E-mail">
-                <button type="submit">Subscribe</button>
+                <input id="email" name="email" type="email" placeholder="E-mail" aria-label="input e-mail address to receive newsletter">
+                <button type="submit" aria-label="submit to confirm subscription to newsletter">Subscribe</button>
             </form>
         </div>
         <div class="footer-social-media">

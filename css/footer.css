@@ -28,11 +28,26 @@ footer h2, footer span {
 }
 
 .footer-newsletter-form form {
-    padding-top: 8px;
+    padding-top: 1rem;
 }
 
-.footer-social-media {
+.footer-newsletter-form button {
+    background-color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
 
+.footer-newsletter-form button:hover, .footer-newsletter-form button:focus {
+    background-color: var(--primary);
+    color: #ffffff;
+    border: 1px solid white;
+}
+
+.footer-newsletter-form #email, .footer-newsletter-form form button {
+    padding: 4px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid transparent;
 }
 
 .footer-social-media-logos {
@@ -53,6 +68,14 @@ footer h2, footer span {
     border-top: 1px solid white;
     text-align: center;
     padding-top: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+
+    .footer-newsletter-form input {
+        width: 400px;
+    }
+
 }
 
 @media screen and (min-width: 1440px) {
