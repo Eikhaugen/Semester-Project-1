@@ -11,6 +11,10 @@ main {
     gap: 1rem;
 }
 
+h2 {
+    align-self: start;
+}
+
 .exhibition-card {
     border-radius: 6px;
     border: 1px solid var(--border);
