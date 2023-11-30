@@ -21,6 +21,7 @@ footer {
 
 footer h2, footer span {
     color: #ffffff;
+    align-self: center;
 }
 
 .footer-newsletter-form span {
