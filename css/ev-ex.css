@@ -14,7 +14,10 @@ main {
 .ev-ex-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
+    max-width: 1400px;
 }
 
 h2 {
@@ -24,6 +27,7 @@ h2 {
 .ev-ex-card {
     border-radius: 6px;
     border: 1px solid var(--border);
+    overflow: hidden;
 }
 
 .ev-ex-info {
@@ -37,7 +41,6 @@ h2 {
     position: relative;
     width: 100%;
     height: 250px;
-    overflow: hidden;
 }
 
 .ev-ex-image-container img {
@@ -72,9 +75,6 @@ h2 {
     .ev-ex-image-container {
         width: 40%;
         height: 350px;
-    }
-
-    .ev-ex-image-container img {
     }
 
 }
