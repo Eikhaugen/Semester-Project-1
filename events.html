@@ -3,10 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/ev-ex.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6747f39511.js" crossorigin="anonymous"></script>
+    <title>Science Museum - Events</title>
 </head>
 <body>
+    <header>
+        <div class="header-content header-shadow">
+            <img src="assets/images/shared/logo.svg" alt="Science museum logo" class="logo">
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="info.html">Visit us</a></li>
+                    <li><a href="exhibitions.html">Exhibitions</a></li>
+                    <li><a href="events.html" class="active">Events</a></li>
+                    <li><a href="school.html">School info</a></li>
+                </ul>
+            </nav>
+            <button id="toggleBtn">
+                <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                </svg>
+                <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" height="2,2em" viewBox="0 0 384 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                </svg>
+            </button>
+            <div>
+                <h1>Events</h1>
+            </div>
+        </div>
+        <div id="menu" class="menu-container">
+            <div class="menu-content menu-shadow">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="info.html">Visit us</a></li>
+                        <li><a href="exhibitions.html">Exhibitions</a></li>
+                        <li><a href="events.html" class="active">Events</a></li>
+                        <li><a href="school.html">School info</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <script>
+            document.getElementById("toggleBtn").addEventListener("click", function () {
+                let menu = document.getElementById("menu");
+                let menuIcon = document.getElementById("menuIcon");
+                let closeIcon = document.getElementById("closeIcon");
 
+                if (menu.style.display === "none" || menu.style.display === "") {
+                    menu.style.display = "block";
+                    menuIcon.style.display = "none";
+                    closeIcon.style.display = "block";
+                } else {
+                    menu.style.display = "none";
+                    menuIcon.style.display = "block";
+                    closeIcon.style.display = "none";
+                }
+            });
+        </script>
+    </header>
+
+    <main>
+        <section class="ev-ex-container">
+            <article class="ev-ex-card">
+                <div class="ev-ex-image-container">
+                    <picture>
+                        <source media="(min-width: 770px)"
+                                srcset="assets/images/desktop/events/bits-to-bytes-desktop.jpg">
+                        <img
+                                src="assets/images/mobile/events/bits-to-bytes-mobile.jpg"
+                                alt="dark room that looks like a starry night"
+                        >
+                    </picture>
+                </div>
+                <div class="ev-ex-info">
+                    <h3>Cosmic Quest Adventure</h3>
+                    <span>February 18th from 11:00 to 14:00</span>
+                    <h4>Embark on an intergalactic journey!</h4>
+                    <p> Join us for an immersive space exploration experience where young astronauts can learn about planets, stars, and the mysteries of the universe through hands-on activities and interactive exhibits.</p>
+                </div>
+            </article>
+            <article class="ev-ex-card">
+                <div class="ev-ex-image-container">
+                    <picture>
+                        <source media="(min-width: 770px)"
+                                srcset="assets/images/desktop/events/bits-to-bytes-desktop.jpg">
+                        <img
+                                src="assets/images/mobile/events/bits-to-bytes-mobile.jpg"
+                                alt="dark room that looks like a starry night"
+                        >
+                    </picture>
+                </div>
+                <div class="ev-ex-info">
+                    <h3>Dino Discovery Expedition</h3>
+                    <span>March 10th from 10:30 to 15:30</span>
+                    <h4>Unearth the world of dinosaurs!</h4>
+                    <p>Young paleontologists will love this prehistoric adventure, featuring lifelike dinosaur replicas, fossil digging activities, and a chance to travel back in time to discover the fascinating world of these ancient creatures.</p>
+                </div>
+            </article>
+            <article class="ev-ex-card">
+                <div class="ev-ex-image-container">
+                    <picture>
+                        <source media="(min-width: 770px)"
+                                srcset="assets/images/desktop/events/bits-to-bytes-desktop.jpg">
+                        <img
+                                src="assets/images/mobile/events/bits-to-bytes-mobile.jpg"
+                                alt="dark room that looks like a starry night"
+                        >
+                    </picture>
+                </div>
+                <div class="ev-ex-info">
+                    <h3>Robo-Engineer Workshop</h3>
+                    <span>April 5th from 11:00 to 16:00</span>
+                    <h4>Build, code, innovate!</h4>
+                    <p>Dive into the world of robotics and technology. Kids will have a blast constructing their own robots, learning basic coding skills, and understanding the principles of engineering in this interactive and educational workshop.</p>
+                </div>
+            </article>
+            <article class="ev-ex-card">
+                <div class="ev-ex-image-container">
+                    <picture>
+                        <source media="(min-width: 770px)"
+                                srcset="assets/images/desktop/events/bits-to-bytes-desktop.jpg">
+                        <img
+                                src="assets/images/mobile/events/bits-to-bytes-mobile.jpg"
+                                alt="dark room that looks like a starry night"
+                        >
+                    </picture>
+                </div>
+                <div class="ev-ex-info">
+                    <h3>Marine Marvels Aquarium</h3>
+                    <span>May 20th from 10:00 to 15:00</span>
+                    <h4>Dive into ocean wonders!</h4>
+                    <p>Explore the wonders of the deep blue sea with our marine-themed event. From touch tanks to interactive exhibits, children will discover the diversity of marine life, conservation efforts, and the importance of preserving our oceans.</p>
+                </div>
+            </article>
+            <article class="ev-ex-card">
+                <div class="ev-ex-image-container">
+                    <picture>
+                        <source media="(min-width: 770px)"
+                                srcset="assets/images/desktop/events/bits-to-bytes-desktop.jpg">
+                        <img
+                                src="assets/images/mobile/events/bits-to-bytes-mobile.jpg"
+                                alt="dark room that looks like a starry night"
+                        >
+                    </picture>
+                </div>
+                <div class="ev-ex-info">
+                    <h3>Science Safari</h3>
+                    <span>June 15th from 11:30 to 15:00</span>
+                    <h4>Venture into the wild wonders of science!</h4>
+                    <p>Embark on a science-themed safari where young explorers can encounter a variety of interactive exhibits on biology, ecology, and the animal kingdom. This event combines learning with adventure for an unforgettable experience.</p>
+                </div>
+            </article>
+            <article class="ev-ex-card">
+                <div class="ev-ex-image-container">
+                    <picture>
+                        <source media="(min-width: 770px)"
+                                srcset="assets/images/desktop/events/bits-to-bytes-desktop.jpg">
+                        <img
+                                src="assets/images/mobile/events/bits-to-bytes-mobile.jpg"
+                                alt="dark room that looks like a starry night"
+                        >
+                    </picture>
+                </div>
+                <div class="ev-ex-info">
+                    <h3>Mad Science Lab Extravaganza</h3>
+                    <span>July 18th from 11:30 to 14:30</span>
+                    <h4>Enter the realm of wacky experiments!</h4>
+                    <p>Calling all budding scientists! Join us in our Mad Science Lab for a day filled with entertaining and educational experiments. Kids will witness the magic of chemistry, physics, and biology in a fun and safe environment, sparking their curiosity and love for science.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <a href="#"><img src="assets/images/shared/logo.svg" alt="Science museum logo" class="footer-logo"></a>
+        <div class="footer-newsletter-form">
+            <h2>Newsletter</h2>
+            <span>Sign up for our newsletter to receive information about coming exhibitions and events.</span>
+            <form>
+                <input id="email" name="email" type="email" placeholder="E-mail"
+                       aria-label="input e-mail address to receive newsletter">
+                <button type="submit" aria-label="submit to confirm subscription to newsletter">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-social-media">
+            <span>Follow us on social media:</span>
+            <div class="footer-social-media-logos">
+                <a href=""><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                <a href=""> <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <span>Copyright Science Museum 2023</span>
+        </div>
+    </footer>
 </body>
 </html>
