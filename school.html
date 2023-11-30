@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/school.css">
+    <link rel="stylesheet" type="text/css" href="css/ev-ex.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +24,7 @@
                     <li><a href="info.html">Visit us</a></li>
                     <li><a href="exhibitions.html">Exhibitions</a></li>
                     <li><a href="events.html">Events</a></li>
-                    <li><a href="school.html"  class="active">School info</a></li>
+                    <li><a href="school.html" class="active">School info</a></li>
                 </ul>
             </nav>
             <button id="toggleBtn">
@@ -48,7 +49,7 @@
                         <li><a href="info.html">Visit us</a></li>
                         <li><a href="exhibitions.html">Exhibitions</a></li>
                         <li><a href="events.html">Events</a></li>
-                        <li><a href="school.html"  class="active">School info</a></li>
+                        <li><a href="school.html" class="active">School info</a></li>
                     </ul>
                 </nav>
             </div>
@@ -72,6 +73,135 @@
         </script>
     </header>
 
+    <main>
+        <p>
+            The Science Museum has free activities suited for pre-schools and schools alike. Entrance, tours and
+            activities are always free for KG and Schools.
+        </p>
+        <p>
+            Here you can find a list of popular learning activities, <b>for booking</b>, or if you have questions, or
+            want a tailored learning experience, <b>use the contact form below</b>.
+        </p>
+        <section class="ev-ex-container">
+            <article class="ev-ex-card">
+                <div class="ev-ex-image-container">
+                    <picture>
+                        <source media="(min-width: 770px)"
+                                srcset="assets/images/desktop/events/bits-to-bytes-desktop.jpg">
+                        <img
+                                src="assets/images/mobile/events/bits-to-bytes-mobile.jpg"
+                                alt="dark room that looks like a starry night"
+                        >
+                    </picture>
+                </div>
+                <div class="ev-ex-info">
+                    <h3>Orbital mechanics</h3>
+                    <p> This hands-on experience lets students explore the fascinating world of orbital mechanics.
+                        They'll gain an intuitive understanding of the forces that govern the movement of celestial
+                        bodies. The highlight? A chance to pilot a spaceship in a state-of-the-art simulator, attempting
+                        a challenging landing manoeuvre. It's a fun, engaging way to bring physics to life!</p>
+                </div>
+            </article>
+            <article class="ev-ex-card">
+                <div class="ev-ex-image-container">
+                    <picture>
+                        <source media="(min-width: 770px)"
+                                srcset="assets/images/desktop/events/bits-to-bytes-desktop.jpg">
+                        <img
+                                src="assets/images/mobile/events/bits-to-bytes-mobile.jpg"
+                                alt="dark room that looks like a starry night"
+                        >
+                    </picture>
+                </div>
+                <div class="ev-ex-info">
+                    <h3>Nuclear Energy</h3>
+                    <p>Students will delve into the principles of nuclear reactions and their applications in energy
+                        generation. The highlight of the session? A chance to operate a simulated nuclear reactor, where
+                        they get to control the reaction rate and safety systems. It's an exciting, hands-on approach to
+                        demystify the complex field of nuclear energy!</p>
+                </div>
+            </article>
+            <article class="ev-ex-card">
+                <div class="ev-ex-image-container">
+                    <picture>
+                        <source media="(min-width: 770px)"
+                                srcset="assets/images/desktop/events/bits-to-bytes-desktop.jpg">
+                        <img
+                                src="assets/images/mobile/events/bits-to-bytes-mobile.jpg"
+                                alt="dark room that looks like a starry night"
+                        >
+                    </picture>
+                </div>
+                <div class="ev-ex-info">
+                    <h3>Lab science</h3>
+                    <p>This interactive journey immerses students in the captivating realm of chemistry. They'll gain
+                        insights into chemical reactions, molecular structures, and the periodic table. The highlight of
+                        the experience? A chance to mix safe chemicals under expert supervision, causing colorful,
+                        exciting reactions. It's a thrilling, hands-on way to make the intricate world of chemistry
+                        tangible and fun!</p>
+                </div>
+            </article>
+            <article class="ev-ex-card">
+                <div class="ev-ex-image-container">
+                    <picture>
+                        <source media="(min-width: 770px)"
+                                srcset="assets/images/desktop/events/bits-to-bytes-desktop.jpg">
+                        <img
+                                src="assets/images/mobile/events/bits-to-bytes-mobile.jpg"
+                                alt="dark room that looks like a starry night"
+                        >
+                    </picture>
+                </div>
+                <div class="ev-ex-info">
+                    <h3>The Industrial Revolution</h3>
+                    <p>This guided tour is specifically crafted for school classes, offering an enlightening journey
+                        through the pivotal Industrial Revolution era. Students will learn about the breakthroughs in
+                        machinery, transportation, and manufacturing that fuelled rapid societal changes.</p>
+                </div>
+            </article>
+        </section>
+        <section class="booking-section">
+            <h3>Booking</h3>
+            <p>Booking is free and on a first come first serve basis. We will work with you to find a suitable date and time for your tour.
+                If you have any questions about accessibility or facilitation please contact us.
+                For booking use the contact for below or contact us with:
+                <br>
+                Phone: 12345678
+                <br>
+                E-mail: booking@sciencemuseum.com</p>
+            <form>
+                <label>School:</label>
+                <input type="text">
+                <label>Class:</label>
+                <input type="text">
+                <label>Number of Pupils:</label>
+                <span>(Maximum 30 per group)</span>
+                <input type="number" min="0" max="30">
+                <label>Contact teacher:</label>
+                <input type="text">
+                <label>Phone:</label>
+                <input type="tel">
+                <label>E-mail:</label>
+                <input type="email">
+                <label>Activity:</label>
+                <select>
+                    <option selected disabled hidden>Select one</option>
+                    <option>Orbital Mechanics</option>
+                    <option>Nuclear Energy</option>
+                    <option>Lab Science</option>
+                    <option>The Industrial Revolution</option>
+                </select>
+                <label>Date and time:</label>
+                <input type="datetime-local">
+                <label>Info:</label>
+                <span>Please add any additional information or questions.</span>
+                <textarea></textarea>
+
+                <button>Submit</button>
+            </form>
+
+        </section>
+    </main>
 
     <footer>
         <a href="#"><img src="assets/images/shared/logo.svg" alt="Science museum logo" class="footer-logo"></a>
@@ -79,7 +209,8 @@
             <h2>Newsletter</h2>
             <span>Sign up for our newsletter to receive information about coming exhibitions and events.</span>
             <form>
-                <input id="email" name="email" type="email" placeholder="E-mail" aria-label="input e-mail address to receive newsletter">
+                <input id="email" name="email" type="email" placeholder="E-mail"
+                       aria-label="input e-mail address to receive newsletter">
                 <button type="submit" aria-label="submit to confirm subscription to newsletter">Subscribe</button>
             </form>
         </div>

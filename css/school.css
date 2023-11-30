@@ -1,2 +1,29 @@
 @import "reset.css";
 @import "variables.css";
+
+.booking-section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-section form {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.booking-section form label {
+    align-self: start;
+}
+
+.booking-section form input {
+    width: 350px;
+}
