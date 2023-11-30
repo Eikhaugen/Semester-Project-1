@@ -145,12 +145,12 @@ h1 {
     .desktop-nav {
         display: block;
         width: 100%;
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .desktop-nav ul {
         display: flex;
-        gap: 32px;
+        gap: 24px;
         flex-direction: row;
         list-style-type: none;
         padding: 24px 0 0 340px;

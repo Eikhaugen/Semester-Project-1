@@ -4,19 +4,3 @@
     --border: #494949;
     --textWhite: #ffffff;
 }
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: roboto, serif;
-    color: var(--text);
-    scroll-behavior: smooth;
-}
-
-body {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    color: #393939;
-}
