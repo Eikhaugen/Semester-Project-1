@@ -2,7 +2,6 @@
 @import "reset.css";
 
 /*Here are styles for event and exhibition sections on events.html and exhibitions.html*/
-
 main {
     width: 100%;
     padding: 1rem;
@@ -48,7 +47,6 @@ h2 {
     position: absolute;
 }
 
-
 @media screen and (min-width: 770px) {
 
     .ev-ex-container {
@@ -86,5 +84,4 @@ h2 {
         border-bottom-right-radius: 6px;
         border-bottom-left-radius: 6px;
     }
-
 }
