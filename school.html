@@ -72,11 +72,10 @@
             });
         </script>
     </header>
-
     <main>
         <p>
             The Science Museum has free activities suited for pre-schools and schools alike. Entrance, tours and
-            activities are always free for KG and Schools.
+            activities are always free for Kindergarten and Schools.
         </p>
         <p>
             Here you can find a list of popular learning activities, <b>for booking</b>, or if you have questions, or
@@ -161,7 +160,7 @@
             </article>
         </section>
         <section class="booking-section">
-            <h3>Booking</h3>
+            <h3 class="booking-h">Booking</h3>
             <p>Booking is free and on a first come first serve basis. We will work with you to find a suitable date and time for your tour.
                 If you have any questions about accessibility or facilitation please contact us.
                 For booking use the contact for below or contact us with:
@@ -170,39 +169,36 @@
                 <br>
                 E-mail: booking@sciencemuseum.com</p>
             <form>
-                <label>School:</label>
-                <input type="text">
-                <label>Class:</label>
-                <input type="text">
-                <label>Number of Pupils:</label>
+                <label for="school">School:</label>
+                <input id="school" name="school" type="text">
+                <label for="class">Class:</label>
+                <input id="class" name="class" type="text">
+                <label for="count">Number of Pupils:</label>
                 <span>(Maximum 30 per group)</span>
-                <input type="number" min="0" max="30">
-                <label>Contact teacher:</label>
-                <input type="text">
-                <label>Phone:</label>
-                <input type="tel">
-                <label>E-mail:</label>
-                <input type="email">
-                <label>Activity:</label>
-                <select>
+                <input id="count" name="count" type="number" min="0" max="30">
+                <label for="teacher">Contact teacher:</label>
+                <input id="teacher" name="teacher" type="text">
+                <label for="phone">Phone:</label>
+                <input id="phone" name="phone" type="tel">
+                <label for="e-mail">E-mail:</label>
+                <input id="e-mail" name="e-mail" type="email">
+                <label for="activity">Activity:</label>
+                <select id="activity">
                     <option selected disabled hidden>Select one</option>
                     <option>Orbital Mechanics</option>
                     <option>Nuclear Energy</option>
                     <option>Lab Science</option>
                     <option>The Industrial Revolution</option>
                 </select>
-                <label>Date and time:</label>
-                <input type="datetime-local">
-                <label>Info:</label>
+                <label for="date">Date and time:</label>
+                <input id="date" name="date" type="datetime-local">
+                <label for="message">Info:</label>
                 <span>Please add any additional information or questions.</span>
-                <textarea></textarea>
-
-                <button>Submit</button>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Submit</button>
             </form>
-
         </section>
     </main>
-
     <footer>
         <a href="#"><img src="assets/images/shared/logo.svg" alt="Science museum logo" class="footer-logo"></a>
         <div class="footer-newsletter-form">

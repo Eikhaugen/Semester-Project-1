@@ -17,6 +17,7 @@ main {
     justify-content: center;
     gap: 1rem;
     max-width: 1400px;
+    color: #393939;
 }
 
 h2 {
@@ -27,6 +28,7 @@ h2 {
     border-radius: 6px;
     border: 1px solid var(--border);
     overflow: hidden;
+    background-color: #ffffff;
 }
 
 .ev-ex-info {
@@ -61,6 +63,7 @@ h2 {
 
     .ev-ex-info {
         width: 60%;
+    /*  try 40%  */
     }
 
     .ev-ex-card:nth-child(even) {
@@ -73,6 +76,7 @@ h2 {
 
     .ev-ex-image-container {
         width: 40%;
+        /*Try 60%*/
         height: 350px;
     }
 
