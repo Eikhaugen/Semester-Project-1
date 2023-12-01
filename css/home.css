@@ -1,6 +1,7 @@
 @import "variables.css";
 @import "reset.css";
 
+
 .links-section {
     height: 72px;
     width: 100%;
@@ -71,7 +72,7 @@ h3 {
 
 .events-section-headline a, .exhibitions-section-headline a {
     font-size: 1rem;
-    color: var(--border);
+    color: var(--textWhite);
     text-decoration: none;
     font-weight: 400;
 }
@@ -110,6 +111,8 @@ h3 {
 }
 
 .ticket-info-card, .hours-info-card {
+    background-color: #ffffff;
+    color: #393939;
     height: fit-content;
     padding: 8px;
     gap: 1rem;

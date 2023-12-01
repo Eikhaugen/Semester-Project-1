@@ -3,10 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/school.css">
+    <link rel="stylesheet" type="text/css" href="css/ev-ex.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6747f39511.js" crossorigin="anonymous"></script>
+    <title>Science Museum - School activities</title>
 </head>
 <body>
+    <header>
+        <div class="header-content header-shadow">
+            <img src="assets/images/shared/logo.svg" alt="Science museum logo" class="logo">
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="info.html">Visit us</a></li>
+                    <li><a href="exhibitions.html">Exhibitions</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="school.html" class="active">School info</a></li>
+                </ul>
+            </nav>
+            <button id="toggleBtn">
+                <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                </svg>
+                <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" height="2,2em" viewBox="0 0 384 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                </svg>
+            </button>
+            <div>
+                <h1>School activities</h1>
+            </div>
+        </div>
+        <div id="menu" class="menu-container">
+            <div class="menu-content menu-shadow">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="info.html">Visit us</a></li>
+                        <li><a href="exhibitions.html">Exhibitions</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="school.html" class="active">School info</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <script>
+            document.getElementById("toggleBtn").addEventListener("click", function () {
+                let menu = document.getElementById("menu");
+                let menuIcon = document.getElementById("menuIcon");
+                let closeIcon = document.getElementById("closeIcon");
 
+                if (menu.style.display === "none" || menu.style.display === "") {
+                    menu.style.display = "block";
+                    menuIcon.style.display = "none";
+                    closeIcon.style.display = "block";
+                } else {
+                    menu.style.display = "none";
+                    menuIcon.style.display = "block";
+                    closeIcon.style.display = "none";
+                }
+            });
+        </script>
+    </header>
+    <main>
+        <p>
+            The Science Museum has free activities suited for pre-schools and schools alike. Entrance, tours and
+            activities are always free for Kindergarten and Schools.
+        </p>
+        <p>
+            Here you can find a list of popular learning activities, <b>for booking</b>, or if you have questions, or
+            want a tailored learning experience, <b>use the contact form below</b>.
+        </p>
+        <section class="ev-ex-container">
+            <article class="ev-ex-card">
+                <div class="ev-ex-image-container">
+                    <picture>
+                        <source media="(min-width: 770px)"
+                                srcset="assets/images/desktop/events/bits-to-bytes-desktop.jpg">
+                        <img
+                                src="assets/images/mobile/events/bits-to-bytes-mobile.jpg"
+                                alt="dark room that looks like a starry night"
+                        >
+                    </picture>
+                </div>
+                <div class="ev-ex-info">
+                    <h3>Orbital mechanics</h3>
+                    <p> This hands-on experience lets students explore the fascinating world of orbital mechanics.
+                        They'll gain an intuitive understanding of the forces that govern the movement of celestial
+                        bodies. The highlight? A chance to pilot a spaceship in a state-of-the-art simulator, attempting
+                        a challenging landing manoeuvre. It's a fun, engaging way to bring physics to life!</p>
+                </div>
+            </article>
+            <article class="ev-ex-card">
+                <div class="ev-ex-image-container">
+                    <picture>
+                        <source media="(min-width: 770px)"
+                                srcset="assets/images/desktop/events/bits-to-bytes-desktop.jpg">
+                        <img
+                                src="assets/images/mobile/events/bits-to-bytes-mobile.jpg"
+                                alt="dark room that looks like a starry night"
+                        >
+                    </picture>
+                </div>
+                <div class="ev-ex-info">
+                    <h3>Nuclear Energy</h3>
+                    <p>Students will delve into the principles of nuclear reactions and their applications in energy
+                        generation. The highlight of the session? A chance to operate a simulated nuclear reactor, where
+                        they get to control the reaction rate and safety systems. It's an exciting, hands-on approach to
+                        demystify the complex field of nuclear energy!</p>
+                </div>
+            </article>
+            <article class="ev-ex-card">
+                <div class="ev-ex-image-container">
+                    <picture>
+                        <source media="(min-width: 770px)"
+                                srcset="assets/images/desktop/events/bits-to-bytes-desktop.jpg">
+                        <img
+                                src="assets/images/mobile/events/bits-to-bytes-mobile.jpg"
+                                alt="dark room that looks like a starry night"
+                        >
+                    </picture>
+                </div>
+                <div class="ev-ex-info">
+                    <h3>Lab science</h3>
+                    <p>This interactive journey immerses students in the captivating realm of chemistry. They'll gain
+                        insights into chemical reactions, molecular structures, and the periodic table. The highlight of
+                        the experience? A chance to mix safe chemicals under expert supervision, causing colorful,
+                        exciting reactions. It's a thrilling, hands-on way to make the intricate world of chemistry
+                        tangible and fun!</p>
+                </div>
+            </article>
+            <article class="ev-ex-card">
+                <div class="ev-ex-image-container">
+                    <picture>
+                        <source media="(min-width: 770px)"
+                                srcset="assets/images/desktop/events/bits-to-bytes-desktop.jpg">
+                        <img
+                                src="assets/images/mobile/events/bits-to-bytes-mobile.jpg"
+                                alt="dark room that looks like a starry night"
+                        >
+                    </picture>
+                </div>
+                <div class="ev-ex-info">
+                    <h3>The Industrial Revolution</h3>
+                    <p>This guided tour is specifically crafted for school classes, offering an enlightening journey
+                        through the pivotal Industrial Revolution era. Students will learn about the breakthroughs in
+                        machinery, transportation, and manufacturing that fuelled rapid societal changes.</p>
+                </div>
+            </article>
+        </section>
+        <section class="booking-section">
+            <h3 class="booking-h">Booking</h3>
+            <p>Booking is free and on a first come first serve basis. We will work with you to find a suitable date and time for your tour.
+                If you have any questions about accessibility or facilitation please contact us.
+                For booking use the contact for below or contact us with:
+                <br>
+                Phone: 12345678
+                <br>
+                E-mail: booking@sciencemuseum.com</p>
+            <form>
+                <label for="school">School:</label>
+                <input id="school" name="school" type="text">
+                <label for="class">Class:</label>
+                <input id="class" name="class" type="text">
+                <label for="count">Number of Pupils:</label>
+                <span>(Maximum 30 per group)</span>
+                <input id="count" name="count" type="number" min="0" max="30">
+                <label for="teacher">Contact teacher:</label>
+                <input id="teacher" name="teacher" type="text">
+                <label for="phone">Phone:</label>
+                <input id="phone" name="phone" type="tel">
+                <label for="e-mail">E-mail:</label>
+                <input id="e-mail" name="e-mail" type="email">
+                <label for="activity">Activity:</label>
+                <select id="activity">
+                    <option selected disabled hidden>Select one</option>
+                    <option>Orbital Mechanics</option>
+                    <option>Nuclear Energy</option>
+                    <option>Lab Science</option>
+                    <option>The Industrial Revolution</option>
+                </select>
+                <label for="date">Date and time:</label>
+                <input id="date" name="date" type="datetime-local">
+                <label for="message">Info:</label>
+                <span>Please add any additional information or questions.</span>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="#"><img src="assets/images/shared/logo.svg" alt="Science museum logo" class="footer-logo"></a>
+        <div class="footer-newsletter-form">
+            <h2>Newsletter</h2>
+            <span>Sign up for our newsletter to receive information about coming exhibitions and events.</span>
+            <form>
+                <input id="email" name="email" type="email" placeholder="E-mail"
+                       aria-label="input e-mail address to receive newsletter">
+                <button type="submit" aria-label="submit to confirm subscription to newsletter">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-social-media">
+            <span>Follow us on social media:</span>
+            <div class="footer-social-media-logos">
+                <a href=""><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                <a href=""> <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <span>Copyright Science Museum 2023</span>
+        </div>
+    </footer>
 </body>
 </html>

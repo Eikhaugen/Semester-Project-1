@@ -1,0 +1,70 @@
+@import "reset.css";
+@import "variables.css";
+
+.booking-section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #393939;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.booking-h {
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
+
+.booking-section form {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.booking-section form label {
+    align-self: start;
+    padding-top: 1rem;
+}
+
+.booking-section form input, .booking-section textarea, .booking-section select {
+    width: 350px;
+    border-radius: 6px;
+    border: 1px solid #494949;
+    margin-top: .5rem;
+    padding: .25rem;
+}
+
+.booking-section span {
+    align-self: start;
+    font-size: 14px;
+}
+
+.booking-section textarea {
+    height: 150px;
+    resize: none;
+}
+
+.booking-section button {
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    border: 1px solid var(--border);
+    width: 350px;
+    height: 30px;
+    background-color: #ffffff;
+    color: #393939;
+    border-radius: 6px;
+}
+
+.booking-section button:hover, .booking-section button:focus {
+    background-color: var(--primary);
+    color: var(--textWhite);
+    border: #ffffff;
+}
