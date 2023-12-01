@@ -3,10 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/info.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6747f39511.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="/css/Leaflet.BigImage.css" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="/js/Leaflet.BigImage.js"></script>
+    <title>Science Museum - Visit us</title>
 </head>
 <body>
+    <header>
+        <div class="header-content header-shadow">
+            <img src="assets/images/shared/logo.svg" alt="Science museum logo" class="logo">
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="info.html" class="active">Visit us</a></li>
+                    <li><a href="exhibitions.html">Exhibitions</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="school.html">School info</a></li>
+                </ul>
+            </nav>
+            <button id="toggleBtn">
+                <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                </svg>
+                <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" height="2,2em" viewBox="0 0 384 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                </svg>
+            </button>
+            <div>
+                <h1>Visit us</h1>
+            </div>
+        </div>
+        <div id="menu" class="menu-container">
+            <div class="menu-content menu-shadow">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="info.html" class="active">Visit us</a></li>
+                        <li><a href="exhibitions.html">Exhibitions</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="school.html">School info</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <script>
+            document.getElementById("toggleBtn").addEventListener("click", function () {
+                let menu = document.getElementById("menu");
+                let menuIcon = document.getElementById("menuIcon");
+                let closeIcon = document.getElementById("closeIcon");
 
+                if (menu.style.display === "none" || menu.style.display === "") {
+                    menu.style.display = "block";
+                    menuIcon.style.display = "none";
+                    closeIcon.style.display = "block";
+                } else {
+                    menu.style.display = "none";
+                    menuIcon.style.display = "block";
+                    closeIcon.style.display = "none";
+                }
+            });
+        </script>
+    </header>
+    <main>
+        <section class="info-section">
+            <div class="hours-info-card">
+                <h2>Opening Hours</h2>
+                <div class="info-content">
+                    <div class="hours"><span>Monday</span><span>Closed</span></div>
+                    <div class="hours"><span>Tuesday</span><span>10:00-16:00</span></div>
+                    <div class="hours"><span>Wednesday</span><span>10:00-16:00</span></div>
+                    <div class="hours"><span>Thursday</span><span>10:00-20:00</span></div>
+                    <div class="hours"><span>Friday</span><span>10:00-18:00</span></div>
+                    <div class="hours"><span>Saturday</span><span>10:00-16:00</span></div>
+                    <div class="hours"><span>Sunday</span><span>10:00-16:00</span></div>
+                </div>
+            </div>
+            <div class="ticket-info-card">
+                <h2>Tickets</h2>
+                <div class="info-content">
+                    <div class="price"><span>Children (0-12):</span><span>Free</span></div>
+                    <div class="price"><span>Teens:</span><span>50 NOK</span></div>
+                    <div class="price"><span>Students:</span><span>70 NOK</span></div>
+                    <div class="price"><span>Adult</span><span>140 NOK</span></div>
+                    <div class="price"><span>Senior</span><span>70 NOK</span></div>
+                </div>
+            </div>
+        </section>
+        <div id="OSM-map"></div>
+        <script type="text/javascript">var map;
+        var marker = [];
+        var mapOptions = {
+            scrollWheelZoom: false,
+        };
+        var id = 'OSM-map';
+        var centerLatLng = [59.929773755334566, 10.756962534476965];
+        map = L.map(id, mapOptions).setView(centerLatLng, 18);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'generated with <a href="https://www.osm-generator.com/">osm-generator.com</a> - &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+        marker = L.marker(
+            L.latLng(59.9298933667207, 10.756177627629247), {
+                icon: L.icon({
+                    iconUrl: 'assets/images/shared/map-pin-solid.svg',
+                }),
+                title: 'Science Museum'
+            });
+        marker.addTo(map);
+        marker.bindPopup('Science Museum');
+        L.control.bigImage({
+            position: 'topright'
+        }).addTo(map);
+        </script>
+        <section class="info-section">
+            <div class="info-card">
+                <h2>Address</h2>
+                <p>Mølleparken 4 <br>
+                    0459 Oslo</p>
+                <h2>
+                    Public Transport
+                </h2>
+                <h3>Tram:</h3>
+                <p>11, 12, or 18 to Birkelunden or Biermanns Gate</p>
+                <h3>Bus:</h3>
+                <p>21, 33, 34, 54 to Alexander Kiellands Plass</p>
+            </div>
+            <div class="info-card">
+                <h2>Accessibility</h2>
+                <h3>Wheelchair</h3>
+                <p>The museum has wheelchair accessible ramps and elevators</p>
+                <h3>Audiovisual</h3>
+                <p>The museum has audio-guides, braille signs and braille booklets</p>
+                <p>For more information about accessibility or facilitation, please contact us on e-mail or by
+                    phone.</p>
+                <p>
+                    Phone: 12345679
+                    <br>
+                    e-mail: contact@sciencemuseum.com
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="#"><img src="assets/images/shared/logo.svg" alt="Science museum logo" class="footer-logo"></a>
+        <div class="footer-newsletter-form">
+            <h2>Newsletter</h2>
+            <span>Sign up for our newsletter to receive information about coming exhibitions and events.</span>
+            <form>
+                <input id="email" name="email" type="email" placeholder="E-mail"
+                       aria-label="input e-mail address to receive newsletter">
+                <button type="submit" aria-label="submit to confirm subscription to newsletter">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-social-media">
+            <span>Follow us on social media:</span>
+            <div class="footer-social-media-logos">
+                <a href=""><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                <a href=""> <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <span>Copyright Science Museum 2023</span>
+        </div>
+    </footer>
 </body>
 </html>
