@@ -31,14 +31,14 @@
                     <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                     <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
                 </svg>
-                <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" height="2,2em" viewBox="0 0 384 512">
+                <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" height="2.2em" viewBox="0 0 384 512">
                     <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                     <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
                 </svg>
             </button>
             <div>
                 <h1>Welcome to the <br>
-                Science Museum</h1>
+                    Science Museum</h1>
             </div>
         </div>
         <div id="menu" class="menu-container">
@@ -73,20 +73,14 @@
         </script>
     </header>
     <main>
-        <section class="links-section">
-            <div class="links-section-content links-section-content-top">
-                <a href=""><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>Visit Us</a>
-                <a href=""><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>What's Happening</a>
-            </div>
-            <div class="links-section-content links-section-content-bottom" tabindex="0">
-                <span>Opening Hours today:</span><span id="today"></span>
-                <script>
-                    let day = (new Date).getDay();
-                    let hours = ["10 - 16", "Closed", "10 - 16", "10 - 16", "10 - 20", "10 - 16", "10 - 16"];
-                    let todaysHours = hours[day];
-                    document.getElementById(id = "today").innerHTML = todaysHours;
-                </script>
-            </div>
+        <section class="opening-hours">
+            <span>Opening Hours today:&nbsp</span><span id="today"></span>
+            <script>
+                let day = (new Date).getDay();
+                let hours = ["10 - 16", "Closed", "10 - 16", "10 - 16", "10 - 20", "10 - 16", "10 - 16"];
+                let todaysHours = hours[day];
+                document.getElementById(id = "today").innerHTML = todaysHours;
+            </script>
         </section>
         <section class="events-section">
             <div class="events-section-headline">
@@ -95,12 +89,16 @@
             </div>
             <div class="events-container">
                 <div class="event-card">
-                        <picture class="event-image">
-                            <source media="(max-width: 599px)" srcset="assets/images/mobile/events/event-night-at-the-museum-s.webp">
-                            <source media="(min-width: 600px) and (max-width: 899px)" srcset="assets/images/mobile/events/event-night-at-the-museum-m.webp">
-                            <source media="(min-width: 900px)" srcset="assets/images/desktop/events/event-night-at-the-museum-l.webp">
-                            <img src="assets/images/mobile/events/event-night-at-the-museum-s.webp" alt="Night at the Museum">
-                        </picture>
+                    <picture class="event-image">
+                        <source media="(max-width: 599px)"
+                                srcset="assets/images/mobile/events/event-night-at-the-museum-s.webp">
+                        <source media="(min-width: 600px) and (max-width: 899px)"
+                                srcset="assets/images/mobile/events/event-night-at-the-museum-m.webp">
+                        <source media="(min-width: 900px)"
+                                srcset="assets/images/desktop/events/event-night-at-the-museum-l.webp">
+                        <img src="assets/images/mobile/events/event-night-at-the-museum-s.webp"
+                             alt="Night at the Museum">
+                    </picture>
                     <div class="event-details">
                         <span>January 6th / 18:00-22:00</span>
                         <h3>Night at the museum</h3>
@@ -108,9 +106,12 @@
                 </div>
                 <div class="event-card">
                     <picture class="event-image">
-                        <source media="(max-width: 599px)" srcset="assets/images/mobile/events/event-aeronautics-s.webp">
-                        <source media="(min-width: 600px) and (max-width: 899px)" srcset="assets/images/mobile/events/event-aeronautics-m.webp">
-                        <source media="(min-width: 900px)" srcset="assets/images/desktop/events/event-aeronautics-l.webp">
+                        <source media="(max-width: 599px)"
+                                srcset="assets/images/mobile/events/event-aeronautics-s.webp">
+                        <source media="(min-width: 600px) and (max-width: 899px)"
+                                srcset="assets/images/mobile/events/event-aeronautics-m.webp">
+                        <source media="(min-width: 900px)"
+                                srcset="assets/images/desktop/events/event-aeronautics-l.webp">
                         <img src="assets/images/mobile/events/event-aeronautics-s.webp" alt="Fighter jet flying">
                     </picture>
                     <div class="event-details">
@@ -120,10 +121,14 @@
                 </div>
                 <div class="event-card">
                     <picture class="event-image">
-                        <source media="(max-width: 599px)" srcset="assets/images/mobile/events/event-radiological-s.webp">
-                        <source media="(min-width: 600px) and (max-width: 899px)" srcset="assets/images/mobile/events/event-radiological-m.webp">
-                        <source media="(min-width: 900px)" srcset="assets/images/desktop/events/event-radiological-l.webp">
-                        <img src="assets/images/mobile/events/event-radiological-s.webp" alt="nuclear reactor control panel">
+                        <source media="(max-width: 599px)"
+                                srcset="assets/images/mobile/events/event-radiological-s.webp">
+                        <source media="(min-width: 600px) and (max-width: 899px)"
+                                srcset="assets/images/mobile/events/event-radiological-m.webp">
+                        <source media="(min-width: 900px)"
+                                srcset="assets/images/desktop/events/event-radiological-l.webp">
+                        <img src="assets/images/mobile/events/event-radiological-s.webp"
+                             alt="nuclear reactor control panel">
                     </picture>
                     <div class="event-details">
                         <span>January 23rd / 11:00-12:00</span>
@@ -135,15 +140,19 @@
         <section class="exhibitions-section">
             <div class="exhibitions-section-headline">
                 <h2>Exhibitions</h2>
-                <a href="exhibitions.html"><i class="fa-solid fa-arrow-right" style="color: #393939;"></i>See more</a>
+                <a href="exhibitions.html"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>See more</a>
             </div>
             <div class="exhibitions-container">
                 <div class="exhibition-card">
                     <picture class="exhibition-image">
-                        <source media="(max-width: 599px)" srcset="assets/images/mobile/exhibitions/exhibition-cosmos-s.webp">
-                        <source media="(min-width: 600px) and (max-width: 899px)" srcset="assets/images/mobile/exhibitions/exhibition-cosmos-m.webp">
-                        <source media="(min-width: 900px)" srcset="assets/images/desktop/exhibitions/exhibition-cosmos-l.webp">
-                        <img src="assets/images/mobile/exhibitions/exhibition-cosmos-s.webp" alt="detailed photo of an orange nebula">
+                        <source media="(max-width: 599px)"
+                                srcset="assets/images/mobile/exhibitions/exhibition-cosmos-s.webp">
+                        <source media="(min-width: 600px) and (max-width: 899px)"
+                                srcset="assets/images/mobile/exhibitions/exhibition-cosmos-m.webp">
+                        <source media="(min-width: 900px)"
+                                srcset="assets/images/desktop/exhibitions/exhibition-cosmos-l.webp">
+                        <img src="assets/images/mobile/exhibitions/exhibition-cosmos-s.webp"
+                             alt="detailed photo of an orange nebula">
                     </picture>
                     <div class="exhibition-details">
                         <span>June 6th - December 30th</span>
@@ -152,10 +161,14 @@
                 </div>
                 <div class="exhibition-card">
                     <picture class="exhibition-image">
-                        <source media="(max-width: 599px)" srcset="assets/images/mobile/exhibitions/exhibition-evolution-s.webp">
-                        <source media="(min-width: 600px) and (max-width: 899px)" srcset="assets/images/mobile/exhibitions/exhibition-evolution-m.webp">
-                        <source media="(min-width: 900px)" srcset="assets/images/desktop/exhibitions/exhibition-evolution-l.webp">
-                        <img src="assets/images/mobile/exhibitions/exhibition-evolution-s.webp" alt="marine iguana on the Galapagos Islands">
+                        <source media="(max-width: 599px)"
+                                srcset="assets/images/mobile/exhibitions/exhibition-evolution-s.webp">
+                        <source media="(min-width: 600px) and (max-width: 899px)"
+                                srcset="assets/images/mobile/exhibitions/exhibition-evolution-m.webp">
+                        <source media="(min-width: 900px)"
+                                srcset="assets/images/desktop/exhibitions/exhibition-evolution-l.webp">
+                        <img src="assets/images/mobile/exhibitions/exhibition-evolution-s.webp"
+                             alt="marine iguana on the Galapagos Islands">
                     </picture>
                     <div class="exhibition-details">
                         <span>August 15th - November 14th '24</span>
@@ -164,10 +177,14 @@
                 </div>
                 <div class="exhibition-card">
                     <picture class="exhibition-image">
-                        <source media="(max-width: 599px)" srcset="assets/images/mobile/exhibitions/exhibition-robotics-s.webp">
-                        <source media="(min-width: 600px) and (max-width: 899px)" srcset="assets/images/mobile/exhibitions/exhibition-robotics-m.webp">
-                        <source media="(min-width: 900px)" srcset="assets/images/desktop/exhibitions/exhibition-robotics-l.webp">
-                        <img src="assets/images/mobile/exhibitions/exhibition-robotics-s.webp" alt="lego robots on wheels">
+                        <source media="(max-width: 599px)"
+                                srcset="assets/images/mobile/exhibitions/exhibition-robotics-s.webp">
+                        <source media="(min-width: 600px) and (max-width: 899px)"
+                                srcset="assets/images/mobile/exhibitions/exhibition-robotics-m.webp">
+                        <source media="(min-width: 900px)"
+                                srcset="assets/images/desktop/exhibitions/exhibition-robotics-l.webp">
+                        <img src="assets/images/mobile/exhibitions/exhibition-robotics-s.webp"
+                             alt="lego robots on wheels">
                     </picture>
                     <div class="exhibition-details">
                         <span>September 12th - April 16th '24</span>
@@ -202,25 +219,28 @@
         </section>
     </main>
     <footer>
+        <div class="footer-shadow">
         <a href="#"><img src="assets/images/shared/logo.svg" alt="Science museum logo" class="footer-logo"></a>
-            <div class="footer-newsletter-form">
+        <div class="footer-newsletter-form">
             <h2>Newsletter</h2>
             <span>Sign up for our newsletter to receive information about coming exhibitions and events.</span>
             <form>
-                <input id="email" name="email" type="email" placeholder="E-mail" aria-label="input e-mail address to receive newsletter">
-                <button type="submit" aria-label="submit to confirm subscription to newsletter">Subscribe</button>
+                <input id="email" name="email" type="email" placeholder="E-mail"
+                       aria-label="input e-mail address to receive newsletter">
+                <button type="submit" aria-label="submit to confirm subscription to newsletter">Submit</button>
             </form>
         </div>
         <div class="footer-social-media">
             <span>Follow us on social media:</span>
             <div class="footer-social-media-logos">
-                <a href=""><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
-                <a href=""> <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
-                <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                <a href="" aria-label="Follow us on facebook"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                <a href="" aria-label="follow us on x"> <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
+                <a href="" aria-label="follow us on instagram"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
             </div>
         </div>
         <div class="footer-copyright">
             <span>Copyright Science Museum 2023</span>
+        </div>
         </div>
     </footer>
 </body>
