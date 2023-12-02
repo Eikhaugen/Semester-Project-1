@@ -2,9 +2,9 @@
 
 header {
     width: 100%;
-    background-image: url("../assets/images/mobile/Banner.png");
-    background-size: 100%;
-    background-position-y: 80%;
+    background-image: url("../assets/images/mobile/banner-mobile.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 180px;
 }
 
@@ -91,8 +91,8 @@ h1 {
     position: absolute;
     top: 0;
     z-index: 20;
-    background-image: url("../assets/images/mobile/menu-bg.png");
-    background-size: 100%;
+    background-image: url("../assets/images/mobile/menu-mobile.webp");
+    background-size: cover;
 }
 
 .menu-content {
@@ -119,8 +119,7 @@ h1 {
 @media screen and (min-width: 900px) {
 
     header {
-        background-image: url("../assets/images/mobile/Banner.png");
-        background-size: 100%;
+        background-image: url("../assets/images/desktop/banner-desktop.webp");
         background-position-y: 80%;
         height: 600px;
     }
