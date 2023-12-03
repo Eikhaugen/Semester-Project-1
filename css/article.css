@@ -1,0 +1,47 @@
+@import "reset.css";
+@import "variables.css";
+
+article {
+    background-color: #ffffff;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: var(--text);
+    border-radius: .6rem;
+    margin: 1rem;
+}
+
+.article-paragraphs-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.article-paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    flex-grow: 1;
+}
+
+.image-description {
+    font-size: .875rem;
+}
+
+article picture {
+    width: 100%;
+}
+
+article img {
+    width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+    .article-paragraphs-container {
+       display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 32px;
+    }
+
+}
