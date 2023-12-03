@@ -35,6 +35,7 @@ article picture {
 
 article img {
     width: 100%;
+    border-radius: .375rem;
 }
 
 @media screen and (min-width: 900px) {
