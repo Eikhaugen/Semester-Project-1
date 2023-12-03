@@ -40,7 +40,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--textWhite);
     text-decoration: none;
 }
 
@@ -53,7 +53,7 @@ nav a:hover, a:focus {
 }
 
 h1 {
-    color: white;
+    color: var(--textWhite);
     font-family: inter, serif;
     font-size: 24px;
     font-weight: 600;
@@ -102,7 +102,7 @@ h1 {
     padding-top: 120px;
     font-size: 30px;
     font-family: inter, serif;
-    color: white;
+    color: var(--textWhite);
 }
 
 .menu-content ul {

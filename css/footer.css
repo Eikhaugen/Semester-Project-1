@@ -44,7 +44,7 @@ footer h2, footer span {
 }
 
 .footer-newsletter-form button:hover, .footer-newsletter-form button:focus {
-    background-color: var(--primary);
+    background-color: var(--primaryActive);
     color: #ffffff;
     border: 1px solid white;
 }
@@ -74,6 +74,10 @@ footer h2, footer span {
     border-top: 1px solid white;
     text-align: center;
     padding-top: 1rem;
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-x-twitter:hover {
+    filter: drop-shadow(-4px -4px 4px #4C0070) drop-shadow(4px 4px 4px #4C0070) drop-shadow(-4px 4px 4px #4C0070) drop-shadow(4px -4px 4px #4C0070);
 }
 
 @media screen and (min-width: 800px) {

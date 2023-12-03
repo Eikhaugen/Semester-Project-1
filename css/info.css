@@ -14,7 +14,7 @@ main {
 
 .ticket-info-card, .hours-info-card, .info-card {
     background-color: #ffffff;
-    color: #393939;
+    color: var(--text);
     height: fit-content;
     padding: 8px;
     gap: 1rem;

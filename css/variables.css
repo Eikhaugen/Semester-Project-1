@@ -1,6 +1,11 @@
 :root {
-    --primary: #2E5CFF;
-    --text: #ffffff;
-    --border: #494949;
+    --primary: #370051;
+    --secondary: ;
+    --tertiary: ;
+    --primaryActive: #4C0070;
+    --secondaryActive: ;
+    --tertiaryActive: ;
+    --text: #393939;
     --textWhite: #ffffff;
+    --border: #494949;
 }
