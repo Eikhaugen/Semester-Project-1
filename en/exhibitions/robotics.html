@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../css/article.css">
+  <link rel="stylesheet" type="text/css" href="../../css/header.css">
+  <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6747f39511.js" crossorigin="anonymous"></script>
+  <title>Science Museum - Robotics and AI</title>
+</head>
+<body>
+  <header>
+    <div class="header-content header-shadow">
+      <img src="../../assets/images/shared/logo.svg" alt="Science museum logo" class="logo">
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../info.html">Visit us</a></li>
+          <li><a href="../exhibitions.html">Exhibitions</a></li>
+          <li><a href="../events.html">Events</a></li>
+          <li><a href="../school.html">School info</a></li>
+        </ul>
+      </nav>
+      <button id="toggleBtn">
+        <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
+          <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+        </svg>
+        <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" height="2.2em" viewBox="0 0 384 512">
+          <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+        </svg>
+      </button>
+      <div>
+        <h1>Robotics and AI</h1>
+      </div>
+    </div>
+    <div id="menu" class="menu-container">
+      <div class="menu-content menu-shadow">
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../info.html">Visit us</a></li>
+            <li><a href="../exhibitions.html">Exhibitions</a></li>
+            <li><a href="../events.html">Events</a></li>
+            <li><a href="../school.html">School info</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script>
+      document.getElementById("toggleBtn").addEventListener("click", function () {
+        let menu = document.getElementById("menu");
+        let menuIcon = document.getElementById("menuIcon");
+        let closeIcon = document.getElementById("closeIcon");
+
+        if (menu.style.display === "none" || menu.style.display === "") {
+          menu.style.display = "block";
+          menuIcon.style.display = "none";
+          closeIcon.style.display = "block";
+        } else {
+          menu.style.display = "none";
+          menuIcon.style.display = "block";
+          closeIcon.style.display = "none";
+        }
+      });
+    </script>
+  </header>
+  <article>
+    <picture class="exhibition-image">
+      <source media="(max-width: 1000px)" srcset="../../assets/images/mobile/article/robotics-ai-image-1-s.webp">
+      <source media="(min-width: 1001px)" srcset="../../assets/images/desktop/article/robotics-ai-image-1-l.webp">
+      <img src="../../assets/images/mobile/article/robotics-ai-image-1-s.webp" alt="Robotics and AI Exhibition at the Science Museum">
+    </picture>
+    <p class="image-description">The Robotics and AI Exhibition at the Science Museum</p>
+    <h2>Innovation Unleashed: Exploring Robotics and Artificial Intelligence</h2>
+    <h3>September 12th - April 16th 20024</h3>
+    <div class="article-paragraphs-container">
+      <div class="article-paragraphs">
+        <p>Welcome to the cutting-edge world of robotics and artificial intelligence! This exhibition takes you on a thrilling journey through the revolutionary technologies that are shaping the future. From autonomous robots to intelligent machines, explore the science that propels us into a new era of innovation.</p>
+        <p>Embark on an interactive exploration of the mechanics behind robotics and AI. Engage with state-of-the-art exhibits, simulations, and educational displays that showcase the capabilities of modern robotics and the power of artificial intelligence in transforming industries and daily life.</p>
+      </div>
+      <div class="article-paragraphs">
+        <p>Join us as we celebrate the pioneers of robotics and AI and showcase the latest advancements that are redefining the boundaries of human achievement. Whether you're an engineer, a tech enthusiast, or a curious mind, this exhibition promises an immersive experience that will leave you inspired by the possibilities of the future.</p>
+        <p>Prepare for a journey into the heart of innovation as we explore the past, present, and future of robotics and artificial intelligence, inviting you to witness the extraordinary feats of human ingenuity that are shaping the world.</p>
+      </div>
+    </div>
+    <picture class="exhibition-image">
+      <source media="(max-width: 1000px)" srcset="../../assets/images/mobile/article/robotics-ai-image-2-s.webp">
+      <source media="(min-width: 1001px)" srcset="../../assets/images/desktop/article/robotics-ai-image-2-l.webp">
+      <img src="../../assets/images/mobile/article/robotics-ai-image-2-s.webp" alt="Robotic arms and advanced AI systems in action">
+    </picture>
+    <p class="image-description">Robotic arms and advanced AI systems in action.</p>
+    <h3>From Automation to Cognition: The Evolution of Robotics</h3>
+    <div class="article-paragraphs-container">
+      <div class="article-paragraphs">
+        <p>Trace the evolution of robotics from automated machines to intelligent systems that can perceive and learn. From early industrial robots to the latest advancements in artificial intelligence, witness the technological milestones that define the history of robotics.</p>
+        <p>Engage with robotic arms, autonomous vehicles, and interactive exhibits that highlight the capabilities of modern robotics. Explore the role of artificial intelligence in enabling machines to understand, adapt, and make decisions in complex environments.</p>
+      </div>
+      <div class="article-paragraphs">
+        <p>This section of the exhibition pays tribute to the visionaries who have shaped the field of robotics and AI, showcasing the impact of these technologies on industries, healthcare, and daily life. It's a testament to human ingenuity and the relentless pursuit of innovation that drives us to explore new frontiers.</p>
+        <p>Join us on this technological odyssey as we celebrate the achievements that have shaped the history of robotics and artificial intelligence.</p>
+      </div>
+    </div>
+    <picture class="exhibition-image">
+      <source media="(max-width: 1000px)" srcset="../../assets/images/mobile/article/robotics-ai-image-3-s.webp">
+      <source media="(min-width: 1001px)" srcset="../../assets/images/desktop/article/robotics-ai-image-3-l.webp">
+      <img src="../../assets/images/mobile/article/robotics-ai-image-3-s.webp" alt="AI algorithms and robotic systems collaborating">
+    </picture>
+    <p class="image-description">AI algorithms and robotic systems collaborating.</p>
+    <h3>Intelligent Collaboration: AI and Robotics in Harmony</h3>
+    <div class="article-paragraphs-container">
+      <div class="article-paragraphs">
+        <p>Witness the power of collaboration between artificial intelligence and robotics. Explore how advanced algorithms and robotic systems work together to solve complex problems, enhance productivity, and contribute to various fields, from healthcare to manufacturing.</p>
+        <p>Immerse yourself in interactive displays and demonstrations that showcase the synergy between AI and robotics. Learn how these technologies are transforming industries and opening new possibilities for innovation and efficiency.</p>
+      </div>
+      <div class="article-paragraphs">
+        <p>This section invites you to appreciate the potential of intelligent collaboration and underscores the importance of robotics and AI in addressing challenges and creating a more connected and automated future.</p>
+        <p>Join us as we explore the fascinating interplay between artificial intelligence and robotics, a dynamic partnership that is reshaping the way we live and work.</p>
+      </div>
+    </div>
+    <a href="../exhibitions.html" class="see-more-btn"><div>See more exhibitions</div></a>
+  </article>
+  <footer>
+    <div class="footer-shadow">
+      <a href="#"><img src="../../assets/images/shared/logo.svg" alt="Science museum logo" class="footer-logo"></a>
+      <div class="footer-newsletter-form">
+        <h2>Newsletter</h2>
+        <span>Sign up for our newsletter to receive information about coming exhibitions and events.</span>
+        <form>
+          <input id="email" name="email" type="email" placeholder="E-mail"
+                 aria-label="input e-mail address to receive newsletter">
+          <button type="submit" aria-label="submit to confirm subscription to newsletter">Submit</button>
+        </form>
+      </div>
+      <div class="footer-social-media">
+        <span>Follow us on social media:</span>
+        <div class="footer-social-media-logos">
+          <a href="" aria-label="Follow us on facebook"><i class="fa-brands fa-facebook"
+                                                           style="color: #ffffff;"></i></a>
+          <a href="" aria-label="follow us on x"> <i class="fa-brands fa-x-twitter"
+                                                     style="color: #ffffff;"></i></a>
+          <a href="" aria-label="follow us on instagram"><i class="fa-brands fa-instagram"
+                                                            style="color: #ffffff;"></i></a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <span>Copyright Science Museum 2023</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
