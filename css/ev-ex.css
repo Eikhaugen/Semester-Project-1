@@ -33,9 +33,9 @@ h2 {
 
 .ev-ex-info {
     padding: .5rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: .5rem;
+    height: 100%;
 }
 
 .ev-ex-image-container {
@@ -48,6 +48,27 @@ h2 {
 .ev-ex-image-container img {
     height: 100%;
     position: absolute;
+}
+
+.read-more-btn {
+    width: 250px;
+    height: 35px;
+    background-color: var(--primary);
+    border: 1px solid white;
+    border-radius: 6px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-self: end;
+    justify-self: center;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 16px 0;
+}
+
+.read-more-btn:hover, .read-more-btn:focus {
+    background-color: var(--primaryActive);
 }
 
 @media screen and (min-width: 770px) {
@@ -63,7 +84,6 @@ h2 {
 
     .ev-ex-info {
         width: 60%;
-    /*  try 40%  */
     }
 
     .ev-ex-card:nth-child(even) {
@@ -76,7 +96,6 @@ h2 {
 
     .ev-ex-image-container {
         width: 40%;
-        /*Try 60%*/
         height: 350px;
     }
 
