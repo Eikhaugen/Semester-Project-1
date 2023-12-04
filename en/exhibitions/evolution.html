@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../css/article.css">
+    <link rel="stylesheet" type="text/css" href="../../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6747f39511.js" crossorigin="anonymous"></script>
+    <title>Science Museum - Evolution</title>
+</head>
+<body>
+    <header>
+        <div class="header-content header-shadow">
+            <img src="../../assets/images/shared/logo.svg" alt="Science museum logo" class="logo">
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../info.html">Visit us</a></li>
+                    <li><a href="../exhibitions.html">Exhibitions</a></li>
+                    <li><a href="../events.html">Events</a></li>
+                    <li><a href="../school.html">School info</a></li>
+                </ul>
+            </nav>
+            <button id="toggleBtn">
+                <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                </svg>
+                <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" height="2.2em" viewBox="0 0 384 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                </svg>
+            </button>
+            <div>
+                <h1>Evolution</h1>
+            </div>
+        </div>
+        <div id="menu" class="menu-container">
+            <div class="menu-content menu-shadow">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../info.html">Visit us</a></li>
+                        <li><a href="../exhibitions.html">Exhibitions</a></li>
+                        <li><a href="../events.html">Events</a></li>
+                        <li><a href="../school.html">School info</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <script>
+            document.getElementById("toggleBtn").addEventListener("click", function () {
+                let menu = document.getElementById("menu");
+                let menuIcon = document.getElementById("menuIcon");
+                let closeIcon = document.getElementById("closeIcon");
+
+                if (menu.style.display === "none" || menu.style.display === "") {
+                    menu.style.display = "block";
+                    menuIcon.style.display = "none";
+                    closeIcon.style.display = "block";
+                } else {
+                    menu.style.display = "none";
+                    menuIcon.style.display = "block";
+                    closeIcon.style.display = "none";
+                }
+            });
+        </script>
+    </header>
+    <article>
+        <picture class="exhibition-image">
+            <source media="(max-width: 1000px)" srcset="../../assets/images/mobile/article/article-image-4-s.webp">
+            <source media="(min-width: 1001px)" srcset="../../assets/images/desktop/article/article-image-4-l.webp">
+            <img src="../../assets/images/mobile/article/article-image-4-s.webp" alt="Evolution Exhibition at the Science Museum">
+        </picture>
+        <p class="image-description">The Evolution Exhibition at the Science Museum</p>
+        <h2>A Journey Through Time: Evolution Explored</h2>
+        <h3>August 15th - November 14th 2024</h3>
+        <div class="article-paragraphs-container">
+            <div class="article-paragraphs">
+                <p>Welcome to the fascinating world of evolution! This exhibition takes you on a captivating journey through the fundamental principles that shape life on Earth. From the origins of simple organisms to the complexity of modern ecosystems, explore the science that unravels the mysteries of biological diversity.</p>
+                <p>Embark on an interactive exploration of the mechanisms behind evolution. Engage with hands-on exhibits, simulations, and educational displays that showcase the processes of natural selection, adaptation, and the intricate web of life that surrounds us.</p>
+            </div>
+            <div class="article-paragraphs">
+                <p>Join us as we celebrate the pioneers of evolutionary biology and showcase the latest discoveries that reveal the interconnectedness of all living things. Whether you're a seasoned biologist or a curious mind, this exhibition promises an immersive experience that will leave you inspired by the wonders of the evolutionary journey.</p>
+                <p>Prepare to travel through the ages as we delve into the past, present, and future of life on Earth, inviting you to witness the extraordinary diversity and adaptability of living organisms.</p>
+            </div>
+        </div>
+        <picture class="exhibition-image">
+            <source media="(max-width: 1000px)" srcset="../../assets/images/mobile/article/article-image-5-s.webp">
+            <source media="(min-width: 1001px)" srcset="../../assets/images/desktop/article/article-image-5-l.webp">
+            <img src="../../assets/images/mobile/article/article-image-5-s.webp" alt="Fossil displays showcasing the history of life on Earth">
+        </picture>
+        <p class="image-description">Fossil displays showcasing the history of life on Earth.</p>
+        <h3>From Ancient Fossils to Modern Marvels: An Evolutionary Legacy</h3>
+        <div class="article-paragraphs-container">
+            <div class="article-paragraphs">
+                <p>Trace the evolution of life on Earth through the fascinating world of fossils. From the first evidence of simple life forms to the complex adaptations of modern species, witness the paleontological milestones that define the history of life on our planet.</p>
+                <p>Engage with detailed fossil displays and interactive exhibits that highlight the evolutionary processes that have shaped the diversity of life. Explore the role of evolution in adapting to changing environments and learn how species have evolved over millions of years.</p>
+            </div>
+            <div class="article-paragraphs">
+                <p>This section of the exhibition pays tribute to the scientists who dedicated their lives to unraveling the mysteries of evolution and the importance of preserving Earth's biodiversity. It's a testament to the dynamic nature of life and the interconnected web that sustains it.</p>
+                <p>Join us on this evolutionary odyssey as we celebrate the marvels that have shaped the history of life on Earth.</p>
+            </div>
+        </div>
+        <picture class="exhibition-image">
+            <source media="(max-width: 1000px)" srcset="../../assets/images/mobile/article/article-image-6-s.webp">
+            <source media="(min-width: 1001px)" srcset="../../assets/images/desktop/article/article-image-6-l.webp">
+            <img src="../../assets/images/mobile/article/article-image-6-s.webp" alt="Evolutionary patterns seen through genetic mapping">
+        </picture>
+        <p class="image-description">Evolutionary patterns seen through genetic mapping.</p>
+        <h3>Genetic Insights: Mapping the Threads of Evolution</h3>
+        <div class="article-paragraphs-container">
+            <div class="article-paragraphs">
+                <p>Peer into the intricacies of evolution and witness the genetic patterns that underlie the diversity of life. Genetic mapping and molecular biology provide crucial insights into the mechanisms of evolution, from the smallest organisms to the complexity of human evolution.</p>
+                <p>Immerse yourself in interactive displays and visualizations that showcase the genetic threads connecting all living organisms. Learn how advancements in genetic research contribute to our understanding of evolutionary relationships and the mechanisms driving adaptation and speciation.</p>
+            </div>
+            <div class="article-paragraphs">
+                <p>This section invites you to appreciate the role of genetics in shaping the tapestry of life and underscores the importance of evolutionary research in addressing fundamental questions about the nature of biodiversity.</p>
+                <p>Join us as we explore the intricate patterns of evolution and marvel at the beauty and complexity of life's evolutionary journey, a tapestry woven with genetic threads, adaptations, and the secrets of our shared heritage.</p>
+            </div>
+        </div>
+        <a href="../exhibitions.html" class="see-more-btn"><div>See more exhibitions</div></a>
+    </article>
+    <footer>
+        <div class="footer-shadow">
+            <a href="#"><img src="../../assets/images/shared/logo.svg" alt="Science museum logo" class="footer-logo"></a>
+            <div class="footer-newsletter-form">
+                <h2>Newsletter</h2>
+                <span>Sign up for our newsletter to receive information about coming exhibitions and events.</span>
+                <form>
+                    <input id="email" name="email" type="email" placeholder="E-mail"
+                           aria-label="input e-mail address to receive newsletter">
+                    <button type="submit" aria-label="submit to confirm subscription to newsletter">Submit</button>
+                </form>
+            </div>
+            <div class="footer-social-media">
+                <span>Follow us on social media:</span>
+                <div class="footer-social-media-logos">
+                    <a href="" aria-label="Follow us on facebook"><i class="fa-brands fa-facebook"
+                                                                     style="color: #ffffff;"></i></a>
+                    <a href="" aria-label="follow us on x"> <i class="fa-brands fa-x-twitter"
+                                                               style="color: #ffffff;"></i></a>
+                    <a href="" aria-label="follow us on instagram"><i class="fa-brands fa-instagram"
+                                                                      style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <span>Copyright Science Museum 2023</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
