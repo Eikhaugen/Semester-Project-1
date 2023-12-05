@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the Science Museum - School activities. Discover hands-on learning experiences for schools, free activities for pre-schools, and how to book educational tours.">
-    <meta name="keywords" content="Science Museum, School activities, Educational tours, Hands-on learning, Science education">
+    <meta name="description"
+          content="Explore the Science Museum - School activities. Discover hands-on learning experiences for schools, free activities for pre-schools, and how to book educational tours.">
+    <meta name="keywords"
+          content="Science Museum, School activities, Educational tours, Hands-on learning, Science education">
     <meta name="author" content="Thomas Eikhaugen">
     <link rel="stylesheet" type="text/css" href="css/school.css">
     <link rel="stylesheet" type="text/css" href="css/ev-ex.css">
@@ -57,23 +59,6 @@
                 </nav>
             </div>
         </div>
-        <script>
-            document.getElementById("toggleBtn").addEventListener("click", function () {
-                let menu = document.getElementById("menu");
-                let menuIcon = document.getElementById("menuIcon");
-                let closeIcon = document.getElementById("closeIcon");
-
-                if (menu.style.display === "none" || menu.style.display === "") {
-                    menu.style.display = "block";
-                    menuIcon.style.display = "none";
-                    closeIcon.style.display = "block";
-                } else {
-                    menu.style.display = "none";
-                    menuIcon.style.display = "block";
-                    closeIcon.style.display = "none";
-                }
-            });
-        </script>
     </header>
     <main>
         <p>
@@ -163,42 +148,47 @@
             </article>
         </div>
         <section class="booking-section">
-            <h3 class="booking-h">Booking</h3>
-            <p>Booking is free and on a first come first serve basis. We will work with you to find a suitable date and time for your tour.
-                If you have any questions about accessibility or facilitation please contact us.
-                For booking use the contact for below or contact us with:
-                <br>
-                Phone: 12345678
-                <br>
-                E-mail: booking@sciencemuseum.com</p>
             <form>
-                <label for="school">School:</label>
-                <input id="school" name="school" type="text">
-                <label for="class">Class:</label>
-                <input id="class" name="class" type="text">
-                <label for="count">Number of Pupils:</label>
-                <span>(Maximum 30 per group)</span>
-                <input id="count" name="count" type="number" min="0" max="30">
-                <label for="teacher">Contact teacher:</label>
-                <input id="teacher" name="teacher" type="text">
-                <label for="phone">Phone:</label>
-                <input id="phone" name="phone" type="tel">
-                <label for="e-mail">E-mail:</label>
-                <input id="e-mail" name="e-mail" type="email">
-                <label for="activity">Activity:</label>
-                <select id="activity">
-                    <option selected disabled hidden>Select one</option>
-                    <option>Orbital Mechanics</option>
-                    <option>Nuclear Energy</option>
-                    <option>Lab Science</option>
-                    <option>The Industrial Revolution</option>
-                </select>
-                <label for="date">Date and time:</label>
-                <input id="date" name="date" type="datetime-local">
-                <label for="message">Info:</label>
-                <span>Please add any additional information or questions.</span>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Submit</button>
+                <div>
+                    <h3 class="booking-h">Booking</h3>
+                    <p>Booking is free and on a first come first serve basis. We will work with you to find a suitable
+                        date and time for your tour.
+                        If you have any questions about accessibility or facilitation please contact us.
+                        For booking use the contact for below or contact us with:
+                        <br>
+                        Phone: 12345678
+                        <br>
+                        E-mail: booking@sciencemuseum.com</p>
+                    <label for="school">School:</label>
+                    <input id="school" name="school" type="text">
+                    <label for="class">Class:</label>
+                    <input id="class" name="class" type="text">
+                    <label for="count">Number of Pupils:</label>
+                    <span>(Maximum 30 per group)</span>
+                    <input id="count" name="count" type="number" min="0" max="30">
+                    <label for="teacher">Contact teacher:</label>
+                    <input id="teacher" name="teacher" type="text">
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input id="phone" name="phone" type="tel">
+                    <label for="e-mail">E-mail:</label>
+                    <input id="e-mail" name="e-mail" type="email">
+                    <label for="activity">Activity:</label>
+                    <select id="activity">
+                        <option selected disabled hidden>Select one</option>
+                        <option>Orbital Mechanics</option>
+                        <option>Nuclear Energy</option>
+                        <option>Lab Science</option>
+                        <option>The Industrial Revolution</option>
+                    </select>
+                    <label for="date">Date and time:</label>
+                    <input id="date" name="date" type="datetime-local">
+                    <label for="message">Info:</label>
+                    <span>Please add any additional information or questions.</span>
+                    <textarea id="message" name="message"></textarea>
+                    <button type="submit">Submit</button>
+                </div>
             </form>
         </section>
     </main>
@@ -217,9 +207,12 @@
             <div class="footer-social-media">
                 <span>Follow us on social media:</span>
                 <div class="footer-social-media-logos">
-                    <a href="" aria-label="Follow us on facebook"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
-                    <a href="" aria-label="follow us on x"> <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
-                    <a href="" aria-label="follow us on instagram"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                    <a href="" aria-label="Follow us on facebook"><i class="fa-brands fa-facebook"
+                                                                     style="color: #ffffff;"></i></a>
+                    <a href="" aria-label="follow us on x"> <i class="fa-brands fa-x-twitter"
+                                                               style="color: #ffffff;"></i></a>
+                    <a href="" aria-label="follow us on instagram"><i class="fa-brands fa-instagram"
+                                                                      style="color: #ffffff;"></i></a>
                 </div>
             </div>
             <div class="footer-copyright">
@@ -227,5 +220,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

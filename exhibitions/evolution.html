@@ -56,23 +56,6 @@
                 </nav>
             </div>
         </div>
-        <script>
-            document.getElementById("toggleBtn").addEventListener("click", function () {
-                let menu = document.getElementById("menu");
-                let menuIcon = document.getElementById("menuIcon");
-                let closeIcon = document.getElementById("closeIcon");
-
-                if (menu.style.display === "none" || menu.style.display === "") {
-                    menu.style.display = "block";
-                    menuIcon.style.display = "none";
-                    closeIcon.style.display = "block";
-                } else {
-                    menu.style.display = "none";
-                    menuIcon.style.display = "block";
-                    closeIcon.style.display = "none";
-                }
-            });
-        </script>
     </header>
     <article>
         <picture class="exhibition-image">
@@ -157,5 +140,6 @@
             </div>
         </div>
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>

@@ -29,6 +29,13 @@
     padding-top: 1rem;
 }
 
+section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
 .booking-section form label {
     align-self: start;
     padding-top: 1rem;
@@ -67,4 +74,10 @@
     background-color: var(--primary);
     color: var(--textWhite);
     border: #ffffff;
+}
+
+@media screen and (min-width: 900px){
+
+
+
 }
