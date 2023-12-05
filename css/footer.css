@@ -41,6 +41,7 @@ footer h2, footer span {
     background-color: #ffffff;
     font-size: 16px;
     cursor: pointer;
+    margin-left: 4px;
 }
 
 .footer-newsletter-form button:hover, .footer-newsletter-form button:focus {
