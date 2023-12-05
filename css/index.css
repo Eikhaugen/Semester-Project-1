@@ -74,6 +74,11 @@ h3 {
     border-radius: 0.375rem;
 }
 
+.event-card:hover, .event-card:focus, .exhibition-card:hover, .exhibition-card:focus {
+    background-color: #4C0070;
+    box-shadow: 4px 4px 4px 0 rgb(76, 0, 112);
+}
+
 .ticket-info-card, .hours-info-card {
     background-color: #ffffff;
     color: var(--text);
