@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the Science Museum - Home. Discover upcoming events, exhibitions, and information about the museum's opening hours and tickets.">
+    <meta name="description"
+          content="Explore the Science Museum - Home. Discover upcoming events, exhibitions, and information about the museum's opening hours and tickets.">
     <meta name="keywords" content="Science Museum, Home, Events, Exhibitions, Opening Hours, Tickets">
     <meta name="author" content="Thomas Eikhaugen">
     <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -22,14 +23,14 @@
             <img src="assets/images/shared/logo.svg" alt="Science museum logo" class="logo">
             <nav class="desktop-nav">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="info.html">Visit us</a></li>
-                    <li><a href="exhibitions.html">Exhibitions</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="school.html">School info</a></li>
+                    <li><a href="index.html" class="active" aria-label="Home">Home</a></li>
+                    <li><a href="info.html" aria-label="Visit us">Visit us</a></li>
+                    <li><a href="exhibitions.html" aria-label="Exhibitions">Exhibitions</a></li>
+                    <li><a href="events.html" aria-label="Events">Events</a></li>
+                    <li><a href="school.html" aria-label="School info">School info</a></li>
                 </ul>
             </nav>
-            <button id="toggleBtn">
+            <button id="toggleBtn" aria-label="toggle menu">
                 <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
                     <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                     <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
@@ -48,50 +49,27 @@
             <div class="menu-content menu-shadow">
                 <nav>
                     <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="info.html">Visit us</a></li>
-                        <li><a href="exhibitions.html">Exhibitions</a></li>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="school.html">School info</a></li>
+                        <li><a href="index.html" class="active" aria-label="Home">Home</a></li>
+                        <li><a href="info.html" aria-label="Visit us">Visit us</a></li>
+                        <li><a href="exhibitions.html" aria-label="Exhibitions">Exhibitions</a></li>
+                        <li><a href="events.html" aria-label="Events">Events</a></li>
+                        <li><a href="school.html" aria-label="School info">School info</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <script>
-            document.getElementById("toggleBtn").addEventListener("click", function () {
-                let menu = document.getElementById("menu");
-                let menuIcon = document.getElementById("menuIcon");
-                let closeIcon = document.getElementById("closeIcon");
-
-                if (menu.style.display === "none" || menu.style.display === "") {
-                    menu.style.display = "block";
-                    menuIcon.style.display = "none";
-                    closeIcon.style.display = "block";
-                } else {
-                    menu.style.display = "none";
-                    menuIcon.style.display = "block";
-                    closeIcon.style.display = "none";
-                }
-            });
-        </script>
     </header>
     <main>
-        <section class="opening-hours">
-            <span>Opening Hours Today:&nbsp</span><span id="today"></span>
-            <script>
-                let day = (new Date).getDay();
-                let hours = ["10 - 16", "Closed", "10 - 16", "10 - 16", "10 - 20", "10 - 16", "10 - 16"];
-                let todaysHours = hours[day];
-                document.getElementById(id = "today").innerHTML = todaysHours;
-            </script>
-        </section>
+        <div class="opening-hours">
+            <span>Opening Hours Today:&nbsp;</span><span id="today"></span>
+        </div>
         <section class="events-section">
             <div class="events-section-headline">
                 <h2>Upcoming Events</h2>
                 <a href="events.html"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>See more</a>
             </div>
             <div class="events-container">
-                <div class="event-card">
+                <div class="event-card" aria-label="Night at the museum event">
                     <picture class="event-image">
                         <source media="(max-width: 599px)"
                                 srcset="assets/images/mobile/events/event-night-at-the-museum-s.webp">
@@ -107,7 +85,7 @@
                         <h3>Night at the museum</h3>
                     </div>
                 </div>
-                <div class="event-card">
+                <div class="event-card" aria-label="aeronautics lecture event">
                     <picture class="event-image">
                         <source media="(max-width: 599px)"
                                 srcset="assets/images/mobile/events/event-aeronautics-s.webp">
@@ -122,7 +100,7 @@
                         <h3>Aeronautics lecture - Prof McCloud</h3>
                     </div>
                 </div>
-                <div class="event-card">
+                <div class="event-card" aria-label="guided tour event">
                     <picture class="event-image">
                         <source media="(max-width: 599px)"
                                 srcset="assets/images/mobile/events/event-radiological-s.webp">
@@ -135,7 +113,7 @@
                     </picture>
                     <div class="event-details">
                         <span>January 23rd / 11:00-12:00</span>
-                        <h3>Guided tour: Radiological Exhibition</h3>
+                        <h3>Guided tour: Power of Tomorrow</h3>
                     </div>
                 </div>
             </div>
@@ -146,7 +124,7 @@
                 <a href="exhibitions.html"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>See more</a>
             </div>
             <div class="exhibitions-container">
-                <a href="exhibitions/cosmology.html" class="exhibition-card">
+                <a href="exhibitions/cosmology.html" class="exhibition-card" aria-label="Cosmology exhibition">
                     <picture class="exhibition-image">
                         <source media="(max-width: 599px)"
                                 srcset="assets/images/mobile/exhibitions/exhibition-cosmos-s.webp">
@@ -162,7 +140,7 @@
                         <h3>Cosmology</h3>
                     </div>
                 </a>
-                <a href="exhibitions/evolution.html" class="exhibition-card">
+                <a href="exhibitions/evolution.html" class="exhibition-card" aria-label="evolution exhibition">
                     <picture class="exhibition-image">
                         <source media="(max-width: 599px)"
                                 srcset="assets/images/mobile/exhibitions/exhibition-evolution-s.webp">
@@ -178,7 +156,7 @@
                         <h3>Evolution Explored</h3>
                     </div>
                 </a>
-                <a href="exhibitions/robotics.html" class="exhibition-card">
+                <a href="exhibitions/robotics.html" class="exhibition-card" aria-label="robotics and ai exhibition">
                     <picture class="exhibition-image">
                         <source media="(max-width: 599px)"
                                 srcset="assets/images/mobile/exhibitions/exhibition-robotics-s.webp">
@@ -223,28 +201,32 @@
     </main>
     <footer>
         <div class="footer-shadow">
-        <a href="#"><img src="assets/images/shared/logo.svg" alt="Science museum logo" class="footer-logo"></a>
-        <div class="footer-newsletter-form">
-            <h2>Newsletter</h2>
-            <span>Sign up for our newsletter to receive information about coming exhibitions and events.</span>
-            <form>
-                <input id="email" name="email" type="email" placeholder="E-mail"
-                       aria-label="input e-mail address to receive newsletter">
-                <button type="submit" aria-label="submit to confirm subscription to newsletter">Submit</button>
-            </form>
-        </div>
-        <div class="footer-social-media">
-            <span>Follow us on social media:</span>
-            <div class="footer-social-media-logos">
-                <a href="" aria-label="Follow us on facebook"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
-                <a href="" aria-label="follow us on x"> <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
-                <a href="" aria-label="follow us on instagram"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            <a href="#"><img src="assets/images/shared/logo.svg" alt="Science museum logo" class="footer-logo"></a>
+            <div class="footer-newsletter-form">
+                <h2>Newsletter</h2>
+                <span>Sign up for our newsletter to receive information about coming exhibitions and events.</span>
+                <form>
+                    <input id="email" name="email" type="email" placeholder="E-mail"
+                           aria-label="input e-mail address to receive newsletter">
+                    <button type="submit" aria-label="submit to confirm subscription to newsletter">Submit</button>
+                </form>
+            </div>
+            <div class="footer-social-media">
+                <span>Follow us on social media:</span>
+                <div class="footer-social-media-logos">
+                    <a href="" aria-label="Follow us on facebook"><i class="fa-brands fa-facebook"
+                                                                     style="color: #ffffff;"></i></a>
+                    <a href="" aria-label="follow us on x"> <i class="fa-brands fa-x-twitter"
+                                                               style="color: #ffffff;"></i></a>
+                    <a href="" aria-label="follow us on instagram"><i class="fa-brands fa-instagram"
+                                                                      style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <span>Copyright Science Museum 2023</span>
             </div>
         </div>
-        <div class="footer-copyright">
-            <span>Copyright Science Museum 2023</span>
-        </div>
-        </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
