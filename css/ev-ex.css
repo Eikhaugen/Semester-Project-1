@@ -34,10 +34,15 @@ main {
     background-color: #ffffff;
     color: var(--text);
     display: grid;
-    align-items: stretch;
+    align-content: baseline;
     height: 100%;
     padding: .5rem;
     row-gap: .5rem;
+    grid-template-rows: repeat(4, min-content) 1fr;
+}
+
+.ev-ex-info h3, .ev-ex-info h4, .ev-ex-info span, .ev-ex-info p {
+    align-self: start;
 }
 
 .ev-ex-info h3 {
@@ -61,6 +66,7 @@ main {
     font-size: 1.125rem;
     margin: .5rem;
     justify-self: center;
+    align-self: end;
 }
 
 .read-more-btn:hover, .read-more-btn:focus {
@@ -88,7 +94,6 @@ main {
 @media screen and (min-width: 1440px) {
 
     header {
-        overflow: hidden;
         border-bottom-right-radius: 6px;
         border-bottom-left-radius: 6px;
     }
