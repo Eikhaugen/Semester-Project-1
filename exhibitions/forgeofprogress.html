@@ -6,6 +6,7 @@
   <meta name="description" content="Explore the Forge of Progress Exhibition at the Science Museum. Delve into the transformative impact of the Industrial Revolution on society, technology, and culture. Join us on a historical journey through innovation and progress.">
   <meta name="keywords" content="Science Museum, Forge of Progress, Industrial Revolution, innovation, progress, societal impact">
   <meta name="author" content="Thomas Eikhaugen">
+  <link rel="icon" href="../assets/images/shared/favicon.svg" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="../css/article.css">
   <link rel="stylesheet" type="text/css" href="../css/header.css">
   <link rel="stylesheet" type="text/css" href="../css/footer.css">
@@ -56,23 +57,6 @@
         </nav>
       </div>
     </div>
-    <script>
-      document.getElementById("toggleBtn").addEventListener("click", function () {
-        let menu = document.getElementById("menu");
-        let menuIcon = document.getElementById("menuIcon");
-        let closeIcon = document.getElementById("closeIcon");
-
-        if (menu.style.display === "none" || menu.style.display === "") {
-          menu.style.display = "block";
-          menuIcon.style.display = "none";
-          closeIcon.style.display = "block";
-        } else {
-          menu.style.display = "none";
-          menuIcon.style.display = "block";
-          closeIcon.style.display = "none";
-        }
-      });
-    </script>
   </header>
   <article>
     <picture class="exhibition-image">
@@ -157,5 +141,6 @@
       </div>
     </div>
   </footer>
+  <script src="../js/main.js"></script>
 </body>
 </html>

@@ -2,40 +2,36 @@
 @import "variables.css";
 
 .booking-section {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #ffffff;
-    color: var(--text);
-    padding: 1rem;
-    border-radius: 6px;
-}
-
-.booking-h {
-    padding-top: 1rem;
-    padding-bottom: .5rem;
+    width: 100%;
+    border-radius: .375rem;
+    padding: .5rem;
+    display: grid;
+    flex-direction: column;
 }
 
 .booking-section form {
-    width: fit-content;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.booking-section form div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding-top: 1rem;
+    max-width: 500px;
+    align-self: center;
 }
 
 .booking-section form label {
-    align-self: start;
     padding-top: 1rem;
 }
 
 .booking-section form input, .booking-section textarea, .booking-section select {
-    width: 350px;
+    max-width: 500px;
     border-radius: 6px;
     border: 1px solid var(--border);
     margin-top: .5rem;
@@ -43,8 +39,16 @@
 }
 
 .booking-section span {
-    align-self: start;
     font-size: 14px;
+}
+
+.booking-section span,
+.booking-section h3,
+.booking-section p,
+.booking-section input,
+.booking-section label,
+.booking-section span {
+    color: var(--text);
 }
 
 .booking-section textarea {
@@ -55,16 +59,27 @@
 .booking-section button {
     margin: 1.5rem 0;
     font-size: 1rem;
-    border: 1px solid var(--border);
-    width: 350px;
+    border: none;
+    width: 50%;
     height: 30px;
-    background-color: #ffffff;
-    color: var(--text);
-    border-radius: 6px;
+    background-color: #2E5CFF;
+    color: var(--textWhite);
+    border-radius: .375rem;
+    align-self: center;
 }
 
 .booking-section button:hover, .booking-section button:focus {
-    background-color: var(--primary);
-    color: var(--textWhite);
+    background-color: var(--primaryActive);
     border: #ffffff;
+}
+
+@media screen and (min-width: 900px){
+
+.booking-section form{
+    grid-template-columns: 1fr 1fr;
+}
+    .booking-section form div {
+        align-self: baseline;
+        justify-self: center;
+    }
 }

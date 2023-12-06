@@ -6,6 +6,7 @@
     <meta name="description" content="Explore the Powering Tomorrow Exhibition at the Science Museum. Delve into the innovative energy solutions, including nuclear reactors and alternative sources. Join us on a journey through the past, present, and future of sustainable power.">
     <meta name="keywords" content="Science Museum, Powering Tomorrow, nuclear reactors, alternative energy, sustainable power, clean energy">
     <meta name="author" content="Thomas Eikhaugen">
+    <link rel="icon" href="../assets/images/shared/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../css/article.css">
     <link rel="stylesheet" type="text/css" href="../css/header.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
@@ -56,23 +57,6 @@
                 </nav>
             </div>
         </div>
-        <script>
-            document.getElementById("toggleBtn").addEventListener("click", function () {
-                let menu = document.getElementById("menu");
-                let menuIcon = document.getElementById("menuIcon");
-                let closeIcon = document.getElementById("closeIcon");
-
-                if (menu.style.display === "none" || menu.style.display === "") {
-                    menu.style.display = "block";
-                    menuIcon.style.display = "none";
-                    closeIcon.style.display = "block";
-                } else {
-                    menu.style.display = "none";
-                    menuIcon.style.display = "block";
-                    closeIcon.style.display = "none";
-                }
-            });
-        </script>
     </header>
     <article>
         <picture class="exhibition-image">
@@ -156,5 +140,6 @@
             </div>
         </div>
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>
