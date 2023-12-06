@@ -116,6 +116,10 @@ h1 {
     list-style-type: none;
 }
 
+.menu-open {
+    overflow: hidden;
+}
+
 @media screen and (min-width: 900px) {
 
     header {

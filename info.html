@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the Science Museum - Visit us. Learn about our opening hours, ticket prices, and accessibility. Find us on the map and plan your visit.">
-    <meta name="keywords" content="Science Museum, Visit us, Opening hours, Tickets, Accessibility, Museum address, Science education">
+    <meta name="description"
+          content="Explore the Science Museum - Visit us. Learn about our opening hours, ticket prices, and accessibility. Find us on the map and plan your visit.">
+    <meta name="keywords"
+          content="Science Museum, Visit us, Opening hours, Tickets, Accessibility, Museum address, Science education">
     <meta name="author" content="Thomas Eikhaugen">
     <link rel="icon" href="assets/images/shared/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/info.css">
@@ -46,7 +48,7 @@
                 <h1>Visit us</h1>
             </div>
         </div>
-        <div id="menu" class="menu-container">
+        <div id="menu" class="menu-container menu-open">
             <div class="menu-content menu-shadow">
                 <nav>
                     <ul>
@@ -87,29 +89,29 @@
         </section>
         <div id="OSM-map"></div>
         <script>
-        var map;
-        var marker = [];
-        var mapOptions = {
-            scrollWheelZoom: false,
-        };
-        var id = 'OSM-map';
-        var centerLatLng = [59.929773755334566, 10.756962534476965];
-        map = L.map(id, mapOptions).setView(centerLatLng, 18);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: 'generated with <a href="https://www.osm-generator.com/">osm-generator.com</a> - &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        }).addTo(map);
-        marker = L.marker(
-            L.latLng(59.9298933667207, 10.756177627629247), {
-                icon: L.icon({
-                    iconUrl: 'assets/images/shared/map-pin-solid.svg',
-                }),
-                title: 'Science Museum'
-            });
-        marker.addTo(map);
-        marker.bindPopup('Science Museum');
-        L.control.bigImage({
-            position: 'topright'
-        }).addTo(map);
+            var map;
+            var marker = [];
+            var mapOptions = {
+                scrollWheelZoom: false,
+            };
+            var id = 'OSM-map';
+            var centerLatLng = [59.929773755334566, 10.756962534476965];
+            map = L.map(id, mapOptions).setView(centerLatLng, 18);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: 'generated with <a href="https://www.osm-generator.com/">osm-generator.com</a> - &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            }).addTo(map);
+            marker = L.marker(
+                L.latLng(59.9298933667207, 10.756177627629247), {
+                    icon: L.icon({
+                        iconUrl: 'assets/images/shared/map-pin-solid.svg',
+                    }),
+                    title: 'Science Museum'
+                });
+            marker.addTo(map);
+            marker.bindPopup('Science Museum');
+            L.control.bigImage({
+                position: 'topright'
+            }).addTo(map);
         </script>
         <section class="info-section">
             <div class="info-card">
@@ -155,9 +157,12 @@
             <div class="footer-social-media">
                 <span>Follow us on social media:</span>
                 <div class="footer-social-media-logos">
-                    <a href="" aria-label="Follow us on facebook"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
-                    <a href="" aria-label="follow us on x"> <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
-                    <a href="" aria-label="follow us on instagram"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                    <a href="" aria-label="Follow us on facebook"><i class="fa-brands fa-facebook"
+                                                                     style="color: #ffffff;"></i></a>
+                    <a href="" aria-label="follow us on x"> <i class="fa-brands fa-x-twitter"
+                                                               style="color: #ffffff;"></i></a>
+                    <a href="" aria-label="follow us on instagram"><i class="fa-brands fa-instagram"
+                                                                      style="color: #ffffff;"></i></a>
                 </div>
             </div>
             <div class="footer-copyright">
