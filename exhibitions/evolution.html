@@ -153,9 +153,9 @@
             <div class="footer-newsletter-form">
                 <h2>Newsletter</h2>
                 <span>Sign up for our newsletter to receive information about coming exhibitions and events.</span>
-                <form aria-label="Newsletter Signup Form">
+                <form name="newsletter" method="POST" data-netlify="true">
                     <input id="email" name="email" type="email" placeholder="E-mail"
-                           aria-label="input e-mail address to receive newsletter">
+                           aria-label="input e-mail address to receive newsletter" required>
                     <button type="submit" aria-label="submit to confirm subscription to newsletter">Submit</button>
                 </form>
             </div>
