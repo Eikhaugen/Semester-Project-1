@@ -3,7 +3,7 @@
 footer {
     width: 100%;
     /*background-image: url("../assets/images/shared/footer.webp");*/
-    background-image: url("../assets/images/shared/footer.jpg");
+    background-image: url("../assets/images/shared/footer.webp");
 }
 
 .footer-shadow {
