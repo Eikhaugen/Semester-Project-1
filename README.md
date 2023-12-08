@@ -35,20 +35,30 @@ The requirements for the semester project was as follows:
 ## Technical Specification
 
 ### Tech:
-- HTML
-- CSS
-- Javascript
-- [Leaflet.js](https://leafletjs.com) / [OSM-Generator](https://www.osm-generator.com)
+- HTML: 
+  - The project utilizes semantic HTML to ensure proper document structure and accessibility.
+- CSS: 
+  - External CSS stylesheets are employed, following the DRY (Don't Repeat Yourself) principle. The styles are well-organized and contribute to a visually appealing design.
+- JavaScript: 
+  - JavaScript is used to enhance user interactivity, such as displaying dynamic opening hours on the front page and implementing a responsive hamburger menu.
+- [Leaflet.js](https://leafletjs.com) / [OSM-Generator](https://www.osm-generator.com) :
+  - The project incorporates Leaflet.js and OSM-Generator to create an interactive map on the "Visit us" page.
 
 ### Tools used:
-- Figma
-- Webstorm
-- Sourcetree/ Git
-- GitHub
-- GitHub project board/ Roadmap
-- Bing image generator
-- ChatGPT 3.5
-- FontAwesome
+- Figma: 
+  - Figma was employed for the design process, starting from mid-fidelity sketches to high-fidelity designs. It facilitated a mobile-first design approach, with iterations to achieve a high-fidelity design.
+- Webstorm: 
+  - Webstorm served as the primary integrated development environment for coding.
+- Sourcetree/Git: 
+  - Git version control was managed using Sourcetree, with branches created for different features or issues. Commits were made locally and pushed to the GitHub repository, followed by merging through GitHub.
+- GitHub/GitHub Project Board/Roadmap: 
+  - GitHub Project Boards and Roadmap were utilized for project management, including issue tracking, pull requests, and overall progress monitoring.
+- Bing Image Generator: 
+  - Images for the project, were created using the Bing image generator.
+- ChatGPT 3.5: 
+  - ChatGPT 3.5 was utilized for generating content descriptions within the project.
+- FontAwesome: 
+  - FontAwesome was used to incorporate vector icons into the project.
 
 ### Deployment:
 
@@ -56,19 +66,19 @@ The site is deployed through Netlify [here](https://main--splendorous-unicorn-f1
 
 ## Features
 
-The project features a website with 17 pages. <br>
-The design is responsive, and works great on screen sizes from about 300 pixels wide up to a capped width at 1440px wide.
-It features a hamburger menu that is present from 900px wide and smaller.
-<br>
-The front page displays the opening hours today, using javascript it displays correct hours on any given day of the week.
-<br>
-The visit us page features a map made using leaflet.js / OSM-Generator.
-<br>
-The pages feature images and descriptions for all articles, exhibitions and event details.
-<br>
-The school info page features a booking form, and the footer on all pages features a newsletter signup.
-The forms work using netlify's form detection, but there is no backend to support booking or newsletters.
+The project features a responsive website with 17 pages, catering to screen sizes ranging from 300 pixels to a capped width of 1440 pixels. Key features include:
 
+- Hamburger Menu: 
+  - A responsive hamburger menu is implemented for devices with a width of 900 pixels and smaller.
+- Dynamic Opening Hours: 
+  - Using JavaScript, the front page dynamically displays accurate opening hours based on the current day of the week.
+- Interactive Map: 
+  - The "Visit us" page features an interactive map created using Leaflet.js and OSM-Generator.
+- Content Descriptions: 
+  - ChatGPT 3.5 is employed for generating creative and engaging content descriptions throughout the website.
+- Form Handling:
+  - Netlify's form detection is utilized for form handling, although backend support for booking or newsletters is not implemented.
+          
 The pages featured in this project are as follows:
 - Front page
 - Visit us
