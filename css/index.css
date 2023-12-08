@@ -143,7 +143,9 @@ picture
     }
 
     .info-section {
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 
     .ticket-info-card {
