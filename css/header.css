@@ -125,6 +125,10 @@ h1 {
     header {
         background-image: url("../assets/images/desktop/banner-desktop-s.webp");
         height: 300px;
+        border-bottom-right-radius: 0.6rem;
+        border-bottom-left-radius: 0.6rem;
+        overflow: hidden;
+
     }
 
     .header-front-page {
