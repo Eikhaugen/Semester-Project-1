@@ -90,10 +90,3 @@ main {
     }
 }
 
-@media screen and (min-width: 1440px) {
-
-    header {
-        border-bottom-right-radius: 6px;
-        border-bottom-left-radius: 6px;
-    }
-}

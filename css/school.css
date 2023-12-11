@@ -73,11 +73,12 @@
     border: #ffffff;
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 900px) {
 
-.booking-section form{
-    grid-template-columns: 1fr 1fr;
-}
+    .booking-section form {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .booking-section form div {
         align-self: baseline;
         justify-self: center;
