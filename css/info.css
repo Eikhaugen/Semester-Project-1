@@ -22,25 +22,25 @@ main {
     flex-direction: column;
     width: 100%;
     border: 1px solid var(--border);
-    border-radius: 6px;
+    border-radius: .6rem;
 }
 
 .info-content {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: .25rem;
 }
 
 .hours, .price {
     display: flex;
     justify-content: space-between;
-    padding: 0 8px;
+    padding: 0 .5rem;
 }
 
 #OSM-map {
     height: 350px;
     width: 100%;
-    border-radius: 6px;
+    border-radius: .375rem;
     z-index: 10;
 }
 
