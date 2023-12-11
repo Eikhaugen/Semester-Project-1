@@ -123,13 +123,14 @@ h1 {
 @media screen and (min-width: 900px) {
 
     header {
-        background-image: url("../assets/images/desktop/banner-desktop.webp");
-        background-position-y: 80%;
+        background-image: url("../assets/images/desktop/banner-desktop-s.webp");
         height: 300px;
     }
 
     .header-front-page {
         height: 600px;
+        background-position-y: 80%;
+        background-image: url("../assets/images/desktop/banner-desktop.webp");
     }
 
     .header-content {
