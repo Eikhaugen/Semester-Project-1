@@ -3,7 +3,7 @@
 
 main {
     width: 100%;
-    padding: .5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -71,7 +71,6 @@ main {
 
 .read-more-btn:hover, .read-more-btn:focus {
     background-color: var(--primaryActive);
-
 }
 
 @media screen and (min-width: 900px) {
