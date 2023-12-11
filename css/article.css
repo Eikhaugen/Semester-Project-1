@@ -2,7 +2,7 @@
 @import "variables.css";
 
 h2, h3 {
-    padding-top: 8px;
+    padding-top: .5rem;
 }
 
 article {
@@ -50,16 +50,16 @@ article img {
     width: 250px;
     height: 35px;
     background-color: var(--primary);
-    border: 1px solid white;
-    border-radius: 6px;
+    border-radius: .5rem;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: center;
-    color: white;
     text-decoration: none;
-    font-size: 18px;
-    margin: 16px 0;
+    font-size: 1.125rem;
+    margin: .5rem;
+    justify-self: center;
+    align-self: center;
 }
 
 .see-more-btn:hover, .see-more-btn:focus {
