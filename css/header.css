@@ -125,6 +125,10 @@ h1 {
     header {
         background-image: url("../assets/images/desktop/banner-desktop.webp");
         background-position-y: 80%;
+        height: 300px;
+    }
+
+    .header-front-page {
         height: 600px;
     }
 
