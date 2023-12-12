@@ -36,6 +36,9 @@ footer h2, footer span {
 
 .footer-newsletter-form form {
     padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .footer-newsletter-form button {
