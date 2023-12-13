@@ -89,13 +89,13 @@
         </section>
         <div id="OSM-map"></div>
         <script>
-            var map;
-            var marker = [];
-            var mapOptions = {
+            let map;
+            let marker = [];
+            let mapOptions = {
                 scrollWheelZoom: false,
             };
-            var id = 'OSM-map';
-            var centerLatLng = [59.929773755334566, 10.756962534476965];
+            let id = 'OSM-map';
+            let centerLatLng = [59.929773755334566, 10.756962534476965];
             map = L.map(id, mapOptions).setView(centerLatLng, 18);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: 'generated with <a href="https://www.osm-generator.com/">osm-generator.com</a> - &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
