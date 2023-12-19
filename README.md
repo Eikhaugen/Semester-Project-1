@@ -127,7 +127,7 @@ Did changes and bugfixes as needed.
 
 I feel like the task wasn't all that inspiring, and I already struggle with designing.
 Still I am quite satisfied with the design on mobile, less so on desktop.
-The design I coded, began deviating quite a bit from the design on I had made on Figma, as I felt the initial design didn't work well.
+The design I coded, began deviating quite a bit from the design I had made on Figma, as I felt the initial design didn't work well.
 The final design in Figma, and the final coded design are quite dissimilar. This is an area I will have to improve on, making better designs and sticking to them once I start coding.
 
 
