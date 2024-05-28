@@ -1,23 +1,85 @@
 # Semester-Project-1
+![Semester Project 1](assets/images/readme-img.png)
 This was the semester project for the first semester of Frontend Development, at Noroff School of Technology and Digital Media.
 The project is deployed on netlify [here](https://main--splendorous-unicorn-f120c1.netlify.app)
 
 ## Table of contents:
 - [About](#about)
-  - [Requirements](#requirements)
-- [Features](#features)
-- [Technical Specification](#technical-specification)
-- [Process:](#process)
-  - [Design Process](#design-process)
-  - [Production Process](#production-process)
-- [Reflection](#reflection)  
+    - [Features](#features)
+    - [Technical Specification](#technical-specification)
+    - [Tools used](#tools-used)
+    - [Deployment](#deployment)
+- [Requirements](#requirements)
+- [Installing](#installing)
+    - [Running](#running)
+- [Process](#process)
+  - [Design-Process](#design-process)
+  - [Production-Process](#production-process)
+- [Reflection](#reflection)
+- [Contact](#contact)
 
 ## About
 
 This was the semester project for the first semester of Frontend Development, at Noroff School of Technology and Digital Media.
 The project revolves around the creation of a website for a new interactive science museum tailored to the primary and middle school demographic, and families with young children.
 
-### Requirements
+### Features
+
+The project features a responsive website with 17 pages, catering to screen sizes ranging from 300 pixels to a capped width of 1440 pixels. Key features include:
+
+- Hamburger Menu:
+  - A responsive hamburger menu is implemented for devices with a width of 900 pixels and smaller.
+- Dynamic Opening Hours:
+  - Using JavaScript, the front page dynamically displays accurate opening hours based on the current day of the week.
+- Interactive Map:
+  - The "Visit us" page features an interactive map created using Leaflet.js and OSM-Generator.
+- Content Descriptions:
+  - ChatGPT 3.5 is employed for generating creative and engaging content descriptions throughout the website.
+- Form Handling:
+  - Netlify's form detection is utilized for form handling, although backend support for booking or newsletters is not implemented.
+
+The pages featured in this project are as follows:
+- Front page
+- Visit us
+- School info page
+- Exhibitions page
+  - 6 exhibition detail pages
+- Events page
+  - 6 event detail pages
+
+### Technical Specification
+
+#### Tech:
+- HTML:
+  - The project utilizes semantic HTML to ensure proper document structure and accessibility.
+- CSS:
+  - External CSS stylesheets are employed, following the DRY (Don't Repeat Yourself) principle. The styles are well-organized and contribute to a visually appealing design.
+- JavaScript:
+  - JavaScript is used to enhance user interactivity, such as displaying dynamic opening hours on the front page and implementing a responsive hamburger menu.
+- [Leaflet.js](https://leafletjs.com) / [OSM-Generator](https://www.osm-generator.com) :
+  - The project incorporates Leaflet.js and OSM-Generator to create an interactive map on the "Visit us" page.
+
+#### Tools used:
+- Figma:
+  - Figma was employed for the design process, starting from mid-fidelity sketches to high-fidelity designs. It facilitated a mobile-first design approach, with iterations to achieve a high-fidelity design.
+- Webstorm:
+  - Webstorm served as the primary integrated development environment for coding.
+- Sourcetree/Git:
+  - Git version control was managed using Sourcetree, with branches created for different features or issues. Commits were made locally and pushed to the GitHub repository, followed by merging through GitHub.
+- GitHub/GitHub Project Board/Roadmap:
+  - GitHub Project Boards and Roadmap were utilized for project management, including issue tracking, pull requests, and overall progress monitoring.
+- Bing Image Generator:
+  - Images for the project, were created using the Bing image generator.
+- ChatGPT 3.5:
+  - ChatGPT 3.5 was utilized for generating content descriptions within the project.
+- FontAwesome:
+  - FontAwesome was used to incorporate vector icons into the project.
+
+### Deployment:
+
+The site is deployed through Netlify [here](https://main--splendorous-unicorn-f120c1.netlify.app)
+
+## Requirements
 
 The requirements for the semester project was as follows:
 
@@ -32,61 +94,15 @@ The requirements for the semester project was as follows:
 - The site should show consideration for content strategy and SEO (consider your use of meta tags and alt text).
 - The GitHub repo for the project should be set to public.
 
-## Technical Specification
+## Installing
+Clone the project repository to your local machine.
+```bash
+git clone https://github.com/Eikhaugen/Semester-Project-1.git
+```
+### Running
 
-### Tech:
-- HTML: 
-  - The project utilizes semantic HTML to ensure proper document structure and accessibility.
-- CSS: 
-  - External CSS stylesheets are employed, following the DRY (Don't Repeat Yourself) principle. The styles are well-organized and contribute to a visually appealing design.
-- JavaScript: 
-  - JavaScript is used to enhance user interactivity, such as displaying dynamic opening hours on the front page and implementing a responsive hamburger menu.
-- [Leaflet.js](https://leafletjs.com) / [OSM-Generator](https://www.osm-generator.com) :
-  - The project incorporates Leaflet.js and OSM-Generator to create an interactive map on the "Visit us" page.
+Use webstorm, VSCode or any other code editor to run the project using liveserver.
 
-### Tools used:
-- Figma: 
-  - Figma was employed for the design process, starting from mid-fidelity sketches to high-fidelity designs. It facilitated a mobile-first design approach, with iterations to achieve a high-fidelity design.
-- Webstorm: 
-  - Webstorm served as the primary integrated development environment for coding.
-- Sourcetree/Git: 
-  - Git version control was managed using Sourcetree, with branches created for different features or issues. Commits were made locally and pushed to the GitHub repository, followed by merging through GitHub.
-- GitHub/GitHub Project Board/Roadmap: 
-  - GitHub Project Boards and Roadmap were utilized for project management, including issue tracking, pull requests, and overall progress monitoring.
-- Bing Image Generator: 
-  - Images for the project, were created using the Bing image generator.
-- ChatGPT 3.5: 
-  - ChatGPT 3.5 was utilized for generating content descriptions within the project.
-- FontAwesome: 
-  - FontAwesome was used to incorporate vector icons into the project.
-
-### Deployment:
-
-The site is deployed through Netlify [here](https://main--splendorous-unicorn-f120c1.netlify.app)
-
-## Features
-
-The project features a responsive website with 17 pages, catering to screen sizes ranging from 300 pixels to a capped width of 1440 pixels. Key features include:
-
-- Hamburger Menu: 
-  - A responsive hamburger menu is implemented for devices with a width of 900 pixels and smaller.
-- Dynamic Opening Hours: 
-  - Using JavaScript, the front page dynamically displays accurate opening hours based on the current day of the week.
-- Interactive Map: 
-  - The "Visit us" page features an interactive map created using Leaflet.js and OSM-Generator.
-- Content Descriptions: 
-  - ChatGPT 3.5 is employed for generating creative and engaging content descriptions throughout the website.
-- Form Handling:
-  - Netlify's form detection is utilized for form handling, although backend support for booking or newsletters is not implemented.
-          
-The pages featured in this project are as follows:
-- Front page
-- Visit us
-- School info page
-- Exhibitions page
-  - 6 exhibition detail pages
-- Events page
-  - 6 event detail pages
 
 ## Process
 
@@ -133,3 +149,11 @@ The final design in Figma, and the final coded design are quite dissimilar. This
 
 I am quite content with my code and the pace I maintain while coding.
 Overall I think the semester project went well.
+
+
+## Contact
+
+Find me here:
+
+[My LinkedIn page](https://www.linkedin.com/in/thomas-eikhaugen-897234264/)  
+[My GitHub page](https://github.com/Eikhaugen)
